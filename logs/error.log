@@ -1,0 +1,7 @@
+[Sat Mar 12 02:01:52.226961 2016] [core:notice] [pid 20334] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Mar 12 02:01:52.228035 2016] [suexec:notice] [pid 20334] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Mar 12 02:01:52.277276 2016] [auth_digest:notice] [pid 20334] AH01757: generating secret for digest authentication ...
+[Sat Mar 12 02:01:52.278133 2016] [lbmethod_heartbeat:notice] [pid 20334] AH02282: No slotmem from mod_heartmonitor
+[Sat Mar 12 02:01:52.337292 2016] [mpm_prefork:notice] [pid 20334] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Mar 12 02:01:52.337348 2016] [core:notice] [pid 20334] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'

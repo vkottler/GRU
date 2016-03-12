@@ -1,0 +1,4 @@
+192.168.0.116 - - [12/Mar/2016:02:01:54 -0600] "GET / HTTP/1.1" 200 98 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+204.15.26.22 - - [12/Mar/2016:02:02:00 -0600] "GET / HTTP/1.1" 200 98 "http://vaughnsplayground.me/" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+204.15.26.22 - - [12/Mar/2016:02:05:58 -0600] "GET / HTTP/1.1" 200 98 "http://vaughnsplayground.me/" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+204.15.26.22 - - [12/Mar/2016:02:05:59 -0600] "GET / HTTP/1.1" 200 98 "http://vaughnsplayground.me/" "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
