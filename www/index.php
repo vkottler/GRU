@@ -1,9 +1,8 @@
-<html>
-  <head>
-  </head>
-  <body>
-  Hello World!<br>
-  <?php echo "Hello from PHP as well!"; ?>
-  </body>
-</html>
+<?php
+include 'connect.php';
+include 'header.php';
 
+echo 'Welcome to the home page!<br><br>';
+
+include 'footer.php';
+?>
