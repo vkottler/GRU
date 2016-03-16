@@ -71,7 +71,7 @@ else {
 			if (! $conn->query ( $sql )) {
 				// something went wrong, display the error
 				echo 'Something went wrong while registering. Please try again later.<br>';
-				//echo $sql;
+				echo $sql;
 				// echo $conn->error; //debugging purposes, uncomment when needed
 			} 
 			else {
