@@ -71,12 +71,24 @@ else {
 			if (! $conn->query ( $sql )) {
 				// something went wrong, display the error
 				echo 'Something went wrong while registering. Please try again later.<br>';
+				echo $sql;
 				// echo $conn->error; //debugging purposes, uncomment when needed
 			} 
-			else
+			else {
 				echo 'Successfully registered. You can now <a href="signin.php">sign in</a> and start posting! :-)';
+				$_SESSION['logged_in'] = true;
+				$_SESSION['user_fname'] = $_POST['user_fname'];
+			}
 		}
 	}
 }
+
+if ($_SESSION['signed_in']) { ?>
+<script type="text/javascript">
+var name = "<?php echo $_SESSION['user_fname']; ?>";
+document.getElementById('userbar').innerHTML = "Hello " + name + ". Not you? <a href='signout.php'>Sign out</a>";
+</script>
+<?php } 
+
 include 'footer.php';
 ?>
