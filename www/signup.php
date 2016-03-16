@@ -91,4 +91,5 @@ document.getElementById('userbar').innerHTML = "Hello " + name + ". Not you? <a 
 <?php } 
 
 include 'footer.php';
+
 ?>
