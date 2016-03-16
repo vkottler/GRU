@@ -85,4 +85,9 @@ else
 }
  
 include 'footer.php';
-?>
+
+if ($_SESSION['signed_in']) { ?>
+<script type="text/javascript">
+document.getElementById('userbar').innerHTML = "Hello <?php echo $_SESSION['user_fname']; ?>. Not you? <a href="signout.php">Sign out</a>";
+</script>
+<?php } ?>
