@@ -64,12 +64,9 @@ else {
 			// notice the use of mysql_real_escape_string, keep everything safe!
 			// also notice the sha1 function which hashes the password
 			$sql = "INSERT INTO
-                    `forumData`.`users` (`user_name`,`user_pass`,`user_fname`,`user_lname`,`user_email`,`user_date`,`user_level`)
-                VALUES ('" .$_POST ['user_name']. "',
-                       '" . sha1 ( $_POST ['user_pass'] ) . "', '".$_POST['user_fname']."', '".$_POST['user_lname']."',
-                       '" .$_POST ['user_email']. "',
-                        NOW(),
-                        0)";
+                    `forumData`.`users` (`user_fname`,`user_lname`,`user_name`,user_email`,`user_date`,`user_level`)
+                VALUES ('" .$_POST ['user_fname']. "', '".$_POST['user_lname']."', '".$_POST['user_name']."'
+                       '" . sha1 ( $_POST ['user_pass'] ) . "', '" .$_POST ['user_email']. "', NOW(), 0)";
 			
 			if (! $conn->query ( $sql )) {
 				// something went wrong, display the error
