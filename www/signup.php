@@ -17,8 +17,8 @@ else {
 		 * note that the action="" will cause the form to post to the same page it is on
 		 */
 		echo '<form method="post" action="">
-    	First name: <input type="text" name="first_name" /><br>
-    	Last name: <input type="text" name="last_name" /><br>
+    	First name: <input type="text" name="userf_name" /><br>
+    	Last name: <input type="text" name="userl_name" /><br>
         Username: <input type="text" name="user_name" /><br>
         Password: <input type="password" name="user_pass"><br>
         Password again: <input type="password" name="user_pass_check"><br>
@@ -65,7 +65,7 @@ else {
 			// also notice the sha1 function which hashes the password
 			$sql = "INSERT INTO
                     `forumData`.`users` (`user_fname`,`user_lname`,`user_name`,`user_email`,`user_date`,`user_level`)
-                VALUES ('" .$_POST ['user_fname']. "', '".$_POST['user_lname']."', '".$_POST['user_name']."'
+                VALUES ('" .$_POST ['user_fname']. "', '".$_POST['user_lname']."', '".$_POST['user_name']."',
                        '" . sha1 ( $_POST ['user_pass'] ) . "', '" .$_POST ['user_email']. "', NOW(), 0)";
 			
 			if (! $conn->query ( $sql )) {
@@ -76,7 +76,7 @@ else {
 			} 
 			else {
 				echo 'Successfully registered. You can now <a href="signin.php">sign in</a> and start posting! :-)';
-				$_SESSION['logged_in'] = true;
+				$_SESSION['signed_in'] = true;
 				$_SESSION['user_fname'] = $_POST['user_fname'];
 			}
 		}
