@@ -17,8 +17,8 @@ else {
 		 * note that the action="" will cause the form to post to the same page it is on
 		 */
 		echo '<form method="post" action="">
-    	First name: <input type="text" name="userf_name" /><br>
-    	Last name: <input type="text" name="userl_name" /><br>
+    	First name: <input type="text" name="user_fname" /><br>
+    	Last name: <input type="text" name="user_lname" /><br>
         Username: <input type="text" name="user_name" /><br>
         Password: <input type="password" name="user_pass"><br>
         Password again: <input type="password" name="user_pass_check"><br>
@@ -64,14 +64,14 @@ else {
 			// notice the use of mysql_real_escape_string, keep everything safe!
 			// also notice the sha1 function which hashes the password
 			$sql = "INSERT INTO
-                    `forumData`.`users` (`user_fname`,`user_lname`,`user_name`,`user_email`,`user_date`,`user_level`)
+                    `forumData`.`users` (`user_fname`,`user_lname`,`user_name`,`user_pass`,user_email`,`user_date`,`user_level`)
                 VALUES ('" .$_POST ['user_fname']. "', '".$_POST['user_lname']."', '".$_POST['user_name']."',
                        '" . sha1 ( $_POST ['user_pass'] ) . "', '" .$_POST ['user_email']. "', NOW(), 0)";
 			
 			if (! $conn->query ( $sql )) {
 				// something went wrong, display the error
 				echo 'Something went wrong while registering. Please try again later.<br>';
-				echo $sql;
+				//echo $sql;
 				// echo $conn->error; //debugging purposes, uncomment when needed
 			} 
 			else {
