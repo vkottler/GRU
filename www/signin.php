@@ -87,7 +87,7 @@ else
 if ($_SESSION['signed_in']) { ?>
 <script type="text/javascript">
 var name = <?php echo $_SESSION['user_fname']; ?>;
-document.getElementById('userbar').innerHTML = "Hello " + name + ". Not you? <a href="signout.php">Sign out</a>";
+document.getElementById('userbar').innerHTML = "Hello " + name + ". Not you? <a href='signout.php'>Sign out</a>";
 </script>
 <?php } 
 
