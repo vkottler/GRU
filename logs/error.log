@@ -5,3 +5,63 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Sat Mar 12 02:01:52.278133 2016] [lbmethod_heartbeat:notice] [pid 20334] AH02282: No slotmem from mod_heartmonitor
 [Sat Mar 12 02:01:52.337292 2016] [mpm_prefork:notice] [pid 20334] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
 [Sat Mar 12 02:01:52.337348 2016] [core:notice] [pid 20334] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Mar 12 02:20:46.217463 2016] [:error] [pid 20452] [client 204.15.26.22:56312] script '/var/git/GRUsite/www/create_topic.php' not found or unable to stat, referer: http://204.15.26.22:133/signup.php
+[Sat Mar 12 02:20:51.391483 2016] [:error] [pid 20452] [client 204.15.26.22:56312] script '/var/git/GRUsite/www/create_cat.php' not found or unable to stat, referer: http://204.15.26.22:133/signup.php
+[Sun Mar 13 03:43:02.079221 2016] [mpm_prefork:notice] [pid 20334] AH00171: Graceful restart requested, doing restart
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sun Mar 13 03:43:02.266091 2016] [auth_digest:notice] [pid 20334] AH01757: generating secret for digest authentication ...
+[Sun Mar 13 03:43:02.266793 2016] [lbmethod_heartbeat:notice] [pid 20334] AH02282: No slotmem from mod_heartmonitor
+[Sun Mar 13 03:43:02.307984 2016] [mpm_prefork:notice] [pid 20334] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sun Mar 13 03:43:02.308019 2016] [core:notice] [pid 20334] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sun Mar 13 21:52:00.974510 2016] [:error] [pid 22870] [client 72.33.2.162:24558] script '/var/git/GRUsite/www/create_topic.php' not found or unable to stat, referer: http://204.15.26.22:133/
+[Tue Mar 15 23:50:26.378701 2016] [auth_basic:error] [pid 22870] [client 128.104.199.150:65353] AH01617: user GRUHacker: authentication failure for "/sicsempertyrannis/": Password Mismatch, referer: http://vaughnsplayground.me/sicsempertyrannis/
+[Tue Mar 15 23:50:40.391569 2016] [auth_basic:error] [pid 22869] [client 128.104.199.150:65357] AH01618: user GRUHAcker not found: /sicsempertyrannis/, referer: http://vaughnsplayground.me/sicsempertyrannis/
+[Tue Mar 15 23:50:46.876786 2016] [auth_basic:error] [pid 22872] [client 128.104.199.150:65359] AH01618: user root not found: /sicsempertyrannis/, referer: http://vaughnsplayground.me/sicsempertyrannis/
+[Tue Mar 15 23:50:53.074101 2016] [auth_basic:error] [pid 22871] [client 128.104.199.150:65362] AH01618: user vkottler not found: /sicsempertyrannis/, referer: http://vaughnsplayground.me/sicsempertyrannis/
+[Tue Mar 15 23:52:50.699242 2016] [mpm_prefork:notice] [pid 20334] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 15 23:52:51.885418 2016] [core:notice] [pid 29674] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Tue Mar 15 23:52:51.886501 2016] [suexec:notice] [pid 29674] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 15 23:52:51.934988 2016] [auth_digest:notice] [pid 29674] AH01757: generating secret for digest authentication ...
+[Tue Mar 15 23:52:51.935880 2016] [lbmethod_heartbeat:notice] [pid 29674] AH02282: No slotmem from mod_heartmonitor
+[Tue Mar 15 23:52:51.983592 2016] [mpm_prefork:notice] [pid 29674] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Tue Mar 15 23:52:51.983637 2016] [core:notice] [pid 29674] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Tue Mar 15 23:57:32.130492 2016] [mpm_prefork:notice] [pid 29674] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Mar 15 23:57:33.285808 2016] [core:notice] [pid 29871] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Tue Mar 15 23:57:33.287252 2016] [suexec:notice] [pid 29871] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 15 23:57:33.350450 2016] [auth_digest:notice] [pid 29871] AH01757: generating secret for digest authentication ...
+[Tue Mar 15 23:57:33.351574 2016] [lbmethod_heartbeat:notice] [pid 29871] AH02282: No slotmem from mod_heartmonitor
+[Tue Mar 15 23:57:33.402769 2016] [mpm_prefork:notice] [pid 29871] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Tue Mar 15 23:57:33.402830 2016] [core:notice] [pid 29871] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Wed Mar 16 00:05:42.630398 2016] [mpm_prefork:notice] [pid 29871] AH00170: caught SIGWINCH, shutting down gracefully
+[Wed Mar 16 00:05:43.822647 2016] [core:notice] [pid 29953] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Wed Mar 16 00:05:43.823716 2016] [suexec:notice] [pid 29953] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Wed Mar 16 00:05:43.872646 2016] [auth_digest:notice] [pid 29953] AH01757: generating secret for digest authentication ...
+[Wed Mar 16 00:05:43.873480 2016] [lbmethod_heartbeat:notice] [pid 29953] AH02282: No slotmem from mod_heartmonitor
+[Wed Mar 16 00:05:43.921345 2016] [mpm_prefork:notice] [pid 29953] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Wed Mar 16 00:05:43.921403 2016] [core:notice] [pid 29953] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Wed Mar 16 00:18:58.966341 2016] [mpm_prefork:notice] [pid 29953] AH00170: caught SIGWINCH, shutting down gracefully
+[Wed Mar 16 00:19:00.159854 2016] [core:notice] [pid 30110] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Wed Mar 16 00:19:00.160962 2016] [suexec:notice] [pid 30110] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Wed Mar 16 00:19:00.210332 2016] [auth_digest:notice] [pid 30110] AH01757: generating secret for digest authentication ...
+[Wed Mar 16 00:19:00.211217 2016] [lbmethod_heartbeat:notice] [pid 30110] AH02282: No slotmem from mod_heartmonitor
+[Wed Mar 16 00:19:00.268521 2016] [mpm_prefork:notice] [pid 30110] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Wed Mar 16 00:19:00.268576 2016] [core:notice] [pid 30110] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Wed Mar 16 00:21:06.557751 2016] [mpm_prefork:notice] [pid 30110] AH00170: caught SIGWINCH, shutting down gracefully
+[Wed Mar 16 00:21:07.741667 2016] [core:notice] [pid 30147] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Wed Mar 16 00:21:07.742733 2016] [suexec:notice] [pid 30147] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Wed Mar 16 00:21:07.791383 2016] [auth_digest:notice] [pid 30147] AH01757: generating secret for digest authentication ...
+[Wed Mar 16 00:21:07.792248 2016] [lbmethod_heartbeat:notice] [pid 30147] AH02282: No slotmem from mod_heartmonitor
+[Wed Mar 16 00:21:07.848537 2016] [mpm_prefork:notice] [pid 30147] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Wed Mar 16 00:21:07.848583 2016] [core:notice] [pid 30147] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Wed Mar 16 05:48:10.027681 2016] [:error] [pid 30160] [client 72.33.2.27:39518] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 89, referer: http://204.15.26.22:133/
+[Wed Mar 16 05:48:22.844250 2016] [:error] [pid 30160] [client 72.33.2.27:39518] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 89, referer: http://204.15.26.22:133/index.php
+[Wed Mar 16 05:51:08.041067 2016] [:error] [pid 30152] [client 72.33.2.27:4195] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 89, referer: http://204.15.26.22:133/index.php
+[Wed Mar 16 05:55:33.943911 2016] [:error] [pid 30173] [client 72.33.2.27:49620] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 87, referer: http://204.15.26.22:133/index.php
+[Wed Mar 16 05:57:39.539140 2016] [:error] [pid 30160] [client 72.33.2.27:31340] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 87, referer: http://204.15.26.22:133/index.php
+[Wed Mar 16 06:00:03.011361 2016] [:error] [pid 30150] [client 72.33.2.27:57026] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 87, referer: http://204.15.26.22:133/index.php
+[Wed Mar 16 06:00:24.184156 2016] [:error] [pid 30152] [client 72.33.2.27:30771] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 87, referer: http://204.15.26.22:133/index.php
