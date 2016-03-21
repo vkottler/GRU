@@ -14,8 +14,8 @@
     <div id="wrapper">
     <div id="menu">
         <a class="item" href="index.php">Home</a> -
-        <a class="item" href="create_topic.php">Create a topic</a> -
-        <a class="item" href="create_cat.php">Create a category</a>
+        <a class="item" href="create_subject.php">Add a Subject</a> -
+        <a class="item" href="create_class.php">Add a Class</a>
         <!--  - <a class="item" href="signin.php">Sign In</a> - -->
         <!-- <a class="item" href="signup.php">Sign Up</a> -->
         <div id="userbar">
