@@ -6,7 +6,7 @@ include 'header.php';
 echo '<h3>Sign up for GRU</h3>';
 
 if (isset ( $_SESSION ['signed_in'] ) && $_SESSION ['signed_in'] == true) {
-	echo 'You are already signed up! You can <a href="signout.php">sign out</a> if you want.';
+	echo 'You are already signed in. You can <a href="signout.php">sign out</a> if you want.';
 } 
 
 else {
