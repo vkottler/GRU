@@ -10,7 +10,8 @@ if (isset($_GET['id'])) {
 	}
 	else {
 		$data = $classData->fetch_row();
-		echo var_dump($data);
+		echo '<h2>'.$data[1].'</h2>';
+		echo $data[2];
 	}
 }
 else echo 'No Class specified.';

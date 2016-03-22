@@ -122,7 +122,7 @@ function getData($table, $index) {
 }
 
 function getClassData($index) {
-	$sql = 'SELECT * FROM `forumData`.`classes` WHRE class_id='.$index;
+	$sql = 'SELECT * FROM `forumData`.`classes` WHERE class_id='.$index;
 	return $sql;
 }
 
