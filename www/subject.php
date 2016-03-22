@@ -3,7 +3,7 @@ include 'connect.php';
 include 'header.php';
 include 'functions.php';
 
-echo '<h2>Subject</h2>';
+echo '<h2>Subject</h2><hr>';
 
 if (isset($_GET['id'])) {
 	$subjectData = $conn->query(getData("subject", $_GET['id']));

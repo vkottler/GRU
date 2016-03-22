@@ -88,6 +88,7 @@ function showAllSubjects() {
 					<form action="create_subject.php" style="display:inline-block;"><input type="submit" value="Create New"></form></td>';
 			echo '<td><b>Description</b></td>';
 			echo '</tr>';
+			echo '<tr><td colspan="2"><hr></td></tr>';
 			for ($i = 0; $i < $num_rows; $i++) {
 				$data = $result->fetch_row();
 				echo '<tr>';
