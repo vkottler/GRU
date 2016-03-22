@@ -2,9 +2,13 @@
 include 'connect.php';
 include 'header.php';
 
-echo 'for viewing subjects';
+if (isset($_GET['id'])) {
+	printf("You are looking at information for Subject %d", $_GET['id']);
+}
+else {
+	echo 'No Subject specified.';
+}
 
-echo var_dump($_GET);
 
 include 'footer.php';
 ?>
