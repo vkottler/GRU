@@ -98,7 +98,7 @@ function showAllSubjects() {
 						echo $data[2];
 					echo '</td>';
 				echo '</tr>';
-				$result2 = $conn->query("SELECT * FROM `forumData`,`classes` WHERE `class_sub`='.$data[0].'");
+				$result2 = $conn->query("SELECT * FROM `forumData`.`classes` WHERE `class_sub`='.$data[0].'");
 				$num_rows2 = $result2->num_rows;
 				if ($num_rows2 == 0) echo '<tr><td>No classes yet!</td><td></td></tr>';
 				else {
