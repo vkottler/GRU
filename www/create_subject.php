@@ -5,7 +5,13 @@ include 'functions.php';
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') createSubForm();
 else {
-	echo var_dump($_POST);
+	$sql = buildSubQuery($_POST['sub_name'], $_POST['sub_description']);
+	
+	// check if the query went through
+	if (!$conn->query($sql)) echo 'Adding subject was unsuccessful.';
+	else {
+		echo 'New subject was added.';
+	}
 }
 
 include 'footer.php';

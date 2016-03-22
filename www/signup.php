@@ -2,6 +2,7 @@
 // signup.php
 include 'connect.php';
 include 'header.php';
+include 'functions.php';
 
 echo '<h3>Sign up for GRU</h3>';
 
@@ -10,29 +11,9 @@ if (isset ( $_SESSION ['signed_in'] ) && $_SESSION ['signed_in'] == true) {
 } 
 
 else {
-	
-	if ($_SERVER ['REQUEST_METHOD'] != 'POST') {
-		/*
-		 * the form hasn't been posted yet, display it
-		 * note that the action="" will cause the form to post to the same page it is on
-		 */
-		echo '<form method="post" action="">
-    	First name: <input type="text" name="user_fname" /><br>
-    	Last name: <input type="text" name="user_lname" /><br>
-        Username: <input type="text" name="user_name" /><br>
-        Password: <input type="password" name="user_pass"><br>
-        Password again: <input type="password" name="user_pass_check"><br>
-        E-mail: <input type="email" name="user_email"><br><br>
-        <input type="submit" value="Sign Up" />
-     </form>';
-	} 
+	if ($_SERVER ['REQUEST_METHOD'] != 'POST') signupForm();
 	else {
-		/*
-		 * so, the form has been posted, we'll process the data in three steps:
-		 * 1. Check the data
-		 * 2. Let the user refill the wrong fields (if necessary)
-		 * 3. Save the data
-		 */
+		
 		$errors = array (); /* declare the array for later use */
 		
 		if (isset ( $_POST ['user_name'] )) {
@@ -60,20 +41,9 @@ else {
 			echo '</ul><br>';
 		} 
 		else {
-			// the form has been posted without, so save it
-			// notice the use of mysql_real_escape_string, keep everything safe!
-			// also notice the sha1 function which hashes the password
-			$sql = "INSERT INTO
-                    `forumData`.`users` (`user_fname`,`user_lname`,`user_name`,`user_pass`,`user_email`,`user_date`,`user_level`)
-                VALUES ('" .$_POST ['user_fname']. "', '".$_POST['user_lname']."', '".$_POST['user_name']."',
-                       '" . sha1 ( $_POST ['user_pass'] ) . "', '" .$_POST ['user_email']. "', NOW(), 0)";
-			
-			if (! $conn->query ( $sql )) {
-				// something went wrong, display the error
-				echo 'Something went wrong while registering. Please try again later.<br>';
-				//echo $sql;
-				// echo $conn->error; //debugging purposes, uncomment when needed
-			} 
+			$sql = buildSignupQuery($_POST['user_fname'], $_POST['user_lname'], $_POST['user_name'], $_POST['user_pass'], $_POST['user_email']);
+			if (!$conn->query($sql)) echo 'Something went wrong while registering. Please try again later.<br>';
+			 
 			else {
 				echo 'Successfully registered. You can now <a href="signin.php">sign in</a> and start posting! :-)';
 				$_SESSION['signed_in'] = true;
