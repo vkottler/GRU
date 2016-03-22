@@ -16,6 +16,22 @@ function createSubForm() {
 		  </form>';
 }
 
+function createClassForm() {
+	global $conn;
+	echo '<form method="post" action="">
+		  Name: <input type="text" name="class_name"><br>
+		  Subject: <select name="subject_id">';
+		  $result = $conn->query("SELECT * FROM `forumData`.`subject`;");
+		  $num_rows = $result->num_rows;
+		  for ($i = 0; $i < $num_rows; $i++) {
+		  	  $data = $result->fetch_row();
+		      echo '<option value='.$data[0].'>'.$data[1].'</option>';
+		  }
+		  echo '</select>
+		  <input type="submit" value="Submit">
+		  </form>';
+}
+
 function signupForm() {
 	echo '<form method="post" action="">
     	First name: <input type="text" name="user_fname" /><br>
@@ -31,6 +47,12 @@ function signupForm() {
 function buildSubQuery($name, $description) {
 	$sql = 'INSERT INTO `forumData`.`subject` (`subject_name`, `subject_description`)
 			VALUES ("'.$name.'", "'.$description.'")';
+	return $sql;
+}
+
+function buildClassQuery($name, $subject, $user) {
+	$sql = 'INSERT INTO `forumData`.`classes` (`class_name`, `class_sub`, `class_by`, `class_date`)
+			VALUES ("'.$name.'", '.$subject.', '.$user.', NOW())';
 	return $sql;
 }
 

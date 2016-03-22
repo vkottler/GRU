@@ -5,7 +5,7 @@ include 'functions.php';
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 	if ($_SESSION['signed_in'] == true) {
-		if ($_SESSION['user_level'] > 0) 
+		if ($_SESSION['user_level'] > 1) 
 			createSubForm();
 		else echo 'You do not have the authority to create Subjects.';
 	}
