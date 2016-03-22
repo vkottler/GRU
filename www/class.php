@@ -21,11 +21,11 @@ if (isset($_GET['id'])) {
 		$jsArg2 = "'currDescription'";
 		
 		$classForm = '<form action="" method="post">
-		              <textarea name="">'.$data[2].'</textarea><br>
+		              <textarea name="new_description">'.$data[2].'</textarea><br>
 		              <input type="submit" value="Submit">
 		              </form>';
 		
-		echo '<div id="currDescription">'.$data[2].'<input type="button" value="Edit Description" onClick="javascript:revealForm('.$jsArg1.');hideForm('.$jsArg2.')" style="display:inline-block;"></div>';
+		echo '<div id="currDescription">'.$data[2].'<input type="button" value="Edit Description" onClick="javascript:showClassDescForm('.$jsArg1.', '.$jsArg2.')" style="display:inline-block;"></div>';
 		echo '<div id="classDescription" style="display:none">'.$classForm.'</div>';
 		echo '<br><br>Added by: '.userFullNameFromID($data[4]);
 	}
