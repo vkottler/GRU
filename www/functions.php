@@ -88,10 +88,10 @@ function showAllSubjects() {
 				$data = $result->fetch_row();
 				echo '<tr>';
 					echo '<td class="leftpart">';
-						echo '<h3><a href="subject.php?id='.$data[0].'">'.$data[1].'</a></h3>';
+						echo '<h3 style="display:inline-block;"><a href="subject.php?id='.$data[0].'">'.$data[1].'</a></h3><form action="create_class.php" style="display:inline-block;"><input type="submit" value="Add Class"></form>';
 					echo '</td>';
 					echo '<td class="rightpart">';
-						echo $data[2].' <form action="create_class.php" style="display:inline-block;"><input type="submit" value="Add Class"></form>';
+						echo $data[2];
 					echo '</td>';
 				echo '</tr>';
 			}
