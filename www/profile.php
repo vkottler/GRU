@@ -10,8 +10,13 @@ if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET
 
 // editting your own profile
 else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] == $_SESSION['user_id']) {
-	echo 'Viewing/editting your profile.<br>'; 
-	echo $_SESSION['user_fname'];
+	
+	echo $_SESSION['user_fname'] . $_SESSION['user_lname'].'<br>';
+	echo $_SESSION['user_name'].'<br>';
+	echo $_SESSION['user_email'].'<br>';
+	echo $_SESSION['user_pass'].'<br>';
+	echo $_SESSION['user_level'];
+	
 }
 
 //viewing someone's profile
