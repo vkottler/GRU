@@ -48,11 +48,10 @@ function buildSigninQuery($uname, $pass) {
 }
 
 function showAllSubjects() {
+	global $conn;
 	$sql = "SELECT * FROM `forumData`.`subject`;";
 	$result = $conn->query($sql);
 	if (!$result) echo 'Subjects cannot be viewed at this time.';
-	
-	/*
 	else {
 		$num_rows = $result->num_rows;
 		printf('Number of rows: %d \n', $num_rows);
@@ -74,8 +73,6 @@ function showAllSubjects() {
 			//echo '</table>';
 		}
 	}
-	*/
-	
 }
 
 ?>
