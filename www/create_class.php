@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 	else echo 'You must be logged in to add Classes.';
 }
 else {
-	$sql = buildClassQuery($_POST['class_name'], $_POST['subject_id'], $_SESSION['user_id']);
+	$sql = buildClassQuery($_POST['class_name'], $_POST['class_description'], $_POST['subject_id'], $_SESSION['user_id']);
 	echo $sql;
 	
 	// check if the query went through

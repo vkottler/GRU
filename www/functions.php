@@ -19,7 +19,8 @@ function createSubForm() {
 function createClassForm() {
 	global $conn;
 	echo '<form method="post" action="">
-		  Name: <input type="text" name="class_name"><br>
+		  Name: <input type="text" name="class_name"><br><br>
+		  Description:<br><textarea name="class_description"></textarea><br><br>
 		  Subject: <select name="subject_id">';
 		  $result = $conn->query("SELECT * FROM `forumData`.`subject`;");
 		  $num_rows = $result->num_rows;
@@ -27,7 +28,7 @@ function createClassForm() {
 		  	  $data = $result->fetch_row();
 		      echo '<option value='.$data[0].'>'.$data[1].'</option>';
 		  }
-		  echo '</select>
+		  echo '</select><br><br>
 		  <input type="submit" value="Submit">
 		  </form>';
 }
@@ -50,9 +51,9 @@ function buildSubQuery($name, $description) {
 	return $sql;
 }
 
-function buildClassQuery($name, $subject, $user) {
+function buildClassQuery($name, $description, $subject, $user) {
 	$sql = 'INSERT INTO `forumData`.`classes` (`class_name`, `class_sub`, `class_by`, `class_date`)
-			VALUES ("'.$name.'", '.$subject.', '.$user.', NOW())';
+			VALUES ("'.$name.'", "'.$description.'", '.$subject.', '.$user.', NOW())';
 	return $sql;
 }
 
