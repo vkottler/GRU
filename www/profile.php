@@ -15,7 +15,7 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	echo "Username: ".$_SESSION['user_name'].'<br>';
 	echo "Email: ".$_SESSION['user_email'].'<br>';
 	echo "Password: ".$_SESSION['user_pass'].'<br>';
-	echo "Level: ".$_SESSION['user_level'];
+	echo "Level: ".$_SESSION['user_level'].'<br> <a> Edit</a>';
 	
 	
 }
