@@ -14,6 +14,13 @@
     <div id="wrapper">
     <div id="menu">
         <a class="item" href="index.php">Home</a>
+        <?php 
+        if ($_SESSION['signed_in'] == true) {
+        	echo '<a class="item" href="profile.php?view=edit&id='.$_SESSION['user_id'].'">View Profile</a>';
+        }
+        if ($_SESSION['user_level'] >= 3) {
+        	echo '<a class="item" href="admin.php">Admin Home</a>';
+        } ?>
         <div id="userbar">
         <?php 
         if (isset($_SESSION['signed_in'])) 
