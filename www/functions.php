@@ -81,14 +81,16 @@ function showAllSubjects() {
 		else {
 			echo '<table>';
 			echo '<tr>';
-			echo '<td><h2 style="display:inline-block;">Subject</h2>&nbsp;&nbsp;&nbsp;&nbsp;<form action="create_subject.php" style="display:inline-block;"><input type="submit" value="Create New"></form></td>';
+			echo '<td><h2 style="display:inline-block;">Subject</h2>&nbsp;&nbsp;&nbsp;&nbsp;
+					<form action="create_subject.php" style="display:inline-block;"><input type="submit" value="Create New"></form></td>';
 			echo '<td><b>Description</b></td>';
 			echo '</tr>';
 			for ($i = 0; $i < $num_rows; $i++) {
 				$data = $result->fetch_row();
 				echo '<tr>';
 					echo '<td class="leftpart">';
-						echo '<h3 style="display:inline-block;"><a href="subject.php?id='.$data[0].'">'.$data[1].'</a></h3><form action="create_class.php" style="display:inline-block;"><input type="submit" value="Add Class"></form>';
+						echo '<h3 style="display:inline-block;"><a href="subject.php?id='.$data[0].'">'.$data[1].'</a></h3>&nbsp;&nbsp;&nbsp;&nbsp;
+								<form action="create_class.php" method="get" style="display:inline-block;"><input type="hidden" value='.$data[0].'><input type="submit" value="Add Class"></form>';
 					echo '</td>';
 					echo '<td class="rightpart">';
 						echo $data[2];
