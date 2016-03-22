@@ -3,11 +3,16 @@ include 'connect.php';
 include 'header.php';
 
 if (isset($_GET['id'])) {
-	printf("You are looking at information for Subject %d.", $_GET['id']);
+	$subjectData = getData("subject", $_GET['id']);
+	if ($subjectData->num_rows != 1) {
+		echo 'Subject not found.';
+	}
+	else {
+		$data = $subjectData->fetch_row();
+		echo var_dump($data);
+	}
 }
-else {
-	echo 'No Subject specified.';
-}
+else echo 'No Class specified.';
 
 
 include 'footer.php';

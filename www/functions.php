@@ -106,7 +106,7 @@ function showAllSubjects() {
 					for ($j = 0; $j < $num_rows2; $j++) {
 						$data2 = $result2->fetch_row();
 						echo '<tr>';
-						echo '<td>'.$fourSpaces.'<a href="class.php?id='.$data2[0].'">'.$data2[1].'</a></td><td>'.$data[2].'</td>';
+						echo '<td>'.$fourSpaces.'<a href="class.php?id='.$data2[0].'">'.$data2[1].'</a></td><td>'.$data2[2].'</td>';
 						echo '</tr>';
 					}
 				}
@@ -114,6 +114,18 @@ function showAllSubjects() {
 			echo '</table>';
 		}
 	}
+}
+
+function getData($table, $index) {
+	global $conn;
+	$sql = 'SELECT * FROM `forumData`.`'.$table.'` WHERE '.$table.'_id='.$index;
+	return $conn->query($sql);
+}
+
+function getClassData($index) {
+	global $conn;
+	$sql = 'SELECT * FROM `forumData`.`classes` WHRE class_id='.$index;
+	return $conn->query($sql);
 }
 
 ?>
