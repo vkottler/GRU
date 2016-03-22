@@ -7,12 +7,10 @@ echo '<h2>Subject</h2>';
 
 if (isset($_GET['id'])) {
 	$subjectData = $conn->query(getData("subject", $_GET['id']));
-	if ($subjectData->num_rows != 1) {
-		echo 'Subject not found.';
-	}
+	if ($subjectData->num_rows != 1) echo 'Subject not found.';
 	else {
 		$data = $subjectData->fetch_row();
-		echo '<h3>'.$data[1].'</h3>';
+		echo '<h3>'.$data[1].'</h3><br>';
 		echo $data[2];
 	}
 }
