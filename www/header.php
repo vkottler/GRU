@@ -13,11 +13,7 @@
 <h1>GRU</h1>
     <div id="wrapper">
     <div id="menu">
-        <a class="item" href="index.php">Home</a> -
-        <a class="item" href="create_subject.php">Add a Subject</a> -
-        <a class="item" href="create_class.php">Add a Class</a>
-        <!--  - <a class="item" href="signin.php">Sign In</a> - -->
-        <!-- <a class="item" href="signup.php">Sign Up</a> -->
+        <a class="item" href="index.php">Home</a>
         <div id="userbar">
         <?php 
         if (isset($_SESSION['signed_in'])) 
