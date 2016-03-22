@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 else {
 	$sql = buildClassQuery($_POST['class_name'], $_POST['class_description'], $_POST['subject_id'], $_SESSION['user_id']);
-	echo $sql.'<br><br>';
 	
 	// check if the query went through
 	if (!$conn->query($sql)) echo 'Adding subject was unsuccessful.';

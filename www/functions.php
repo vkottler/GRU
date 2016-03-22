@@ -54,7 +54,7 @@ function buildSubQuery($name, $description) {
 }
 
 function buildClassQuery($name, $description, $subject, $user) {
-	$sql = 'INSERT INTO `forumData`.`classes` (`class_name`, `class_description`, class_sub`, `class_by`, `class_date`)
+	$sql = 'INSERT INTO `forumData`.`classes` (`class_name`, `class_description`, `class_sub`, `class_by`, `class_date`)
 			VALUES ("'.$name.'", "'.$description.'", '.$subject.', '.$user.', NOW())';
 	return $sql;
 }
