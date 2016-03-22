@@ -2,6 +2,7 @@
 include 'connect.php';
 include 'header.php';
 include 'functions.php';
+include 'scripts.php';
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 	if ($_SESSION['signed_in'] == true) {
