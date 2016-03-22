@@ -1,6 +1,7 @@
 <?php
 include 'connect.php';
 include 'header.php';
+include 'functions.php';
 
 echo 'for viewing classes';
 
