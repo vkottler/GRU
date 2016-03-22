@@ -10,8 +10,8 @@ function signInForm() {
 
 function createSubForm() {
 	echo '<form method="post" action="">
-		  Subject: <input type="text" name="sub_name" /><br>
-		  Description:<br><textarea name="sub_description" /></textarea><br>
+		  Subject: <input type="text" name="sub_name" /><br><br>
+		  Description:<br><textarea name="sub_description" /></textarea><br><br>
 		  <input type="submit" value="Add Subject" />
 		  </form>';
 }
@@ -45,6 +45,31 @@ function buildSigninQuery($uname, $pass) {
             WHERE `user_name` LIKE ('" .$uname. "')
             AND `user_pass` LIKE ('".sha1($pass)."')";
 	return $sql;
+}
+
+function showAllSubjects() {
+	$sql = "SELECT * FROM `forumData`.`subject`;";
+	$result = $conn->query($sql);
+	if (!$result) echo 'Subjects cannot be viewed at this time.';
+	else {
+		$num_rows = $result->num_rows;
+		if ($num_rows == 0) echo 'No Subjects have been created yet!';
+		else {
+			echo '<table>';
+			for ($i = 0; $i < $num_rows; $i++) {
+				$data = $result->fetch_row();
+				echo '<tr>';
+					echo '<td class="leftpart">';
+						echo '<h3><a href="category.php?id='.$data[0].'">'.$data[1].'</a></h3>';
+					echo '</td>';
+					echo '<td class="rightpart">';
+						echo $data[2];
+					echo '</td>';
+				echo '</tr>';
+			}
+			echo '</table>';
+		}
+	}
 }
 
 ?>

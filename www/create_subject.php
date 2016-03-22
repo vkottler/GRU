@@ -11,6 +11,7 @@ else {
 	if (!$conn->query($sql)) echo 'Adding subject was unsuccessful.';
 	else {
 		echo 'New subject was added.';
+		echo '<META http-equiv="refresh" content="1;URL=index.php">';
 	}
 }
 
