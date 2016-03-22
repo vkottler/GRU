@@ -11,7 +11,8 @@ if (isset($_GET['id'])) {
 	else {
 		$data = $classData->fetch_row();
 		echo '<h3>'.$data[1].'</h3><br>';
-		echo $data[2].'<input type="button" value="Edit Description" onClick="javascript:revealForm("classDescription")" style="display:inline-block;">"';
+		$jsArg = "classDescription";
+		echo $data[2].'<input type="button" value="Edit Description" onClick="javascript:revealForm('.$jsArg.')" style="display:inline-block;">';
 		echo '<div id="classDescription" style="display:none">Hello!</div>';
 		echo '<br><br>Added by: '.userFullNameFromID($data[4]);
 	}
