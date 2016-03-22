@@ -5,8 +5,6 @@ include 'functions.php';
 
 $fourSpaces = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
-echo '<h2>Class</h2><hr>';
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$sql = "UPDATE `forumData`.`classes` SET `class_description`='".$_POST['new_description']."'
 			WHERE `class_id`=".$_POST['curr_id'];
@@ -20,7 +18,7 @@ if (isset($_GET['id'])) {
 	if ($classData->num_rows != 1) echo 'Class not found.';
 	else {
 		$data = $classData->fetch_row();
-		echo '<h3>'.$data[1].'</h3><br>';
+		echo '<h2>'.$data[1].'</h2><hr><br>';
 		
 		$jsArg1 = "'classDescription'";
 		$jsArg2 = "'currDescription'";
@@ -33,7 +31,7 @@ if (isset($_GET['id'])) {
 		
 		echo '<div id="currDescription">'.$data[2].$fourSpaces.'<input type="button" value="Edit Description" onClick="javascript:showClassDescForm('.$jsArg1.', '.$jsArg2.')" style="display:inline-block;"></div>';
 		echo '<div id="classDescription" style="display:none">'.$classForm.'</div>';
-		echo '<br><br>Added by: '.userFullNameFromID($data[4]);
+		echo '<br><br><i>Added by: '.userFullNameFromID($data[4]).'</i>';
 	}
 }
 else echo 'No Class specified.';
