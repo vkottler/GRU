@@ -53,21 +53,23 @@ function showAllSubjects() {
 	if (!$result) echo 'Subjects cannot be viewed at this time.';
 	else {
 		$num_rows = $result->num_rows;
+		echo 'Number of rows: '.var_dump($num_rows);
 		if ($num_rows == 0) echo 'No Subjects have been created yet!';
 		else {
-			echo '<table>';
+			//echo '<table>';
 			for ($i = 0; $i < $num_rows; $i++) {
 				$data = $result->fetch_row();
-				echo '<tr>';
-					echo '<td class="leftpart">';
-						echo '<h3><a href="category.php?id='.$data[0].'">'.$data[1].'</a></h3>';
-					echo '</td>';
-					echo '<td class="rightpart">';
-						echo $data[2];
-					echo '</td>';
-				echo '</tr>';
+				echo var_dump($data).'<br>';
+				//echo '<tr>';
+				//	echo '<td class="leftpart">';
+				//		echo '<h3><a href="category.php?id='.$data[0].'">'.$data[1].'</a></h3>';
+				//	echo '</td>';
+				//	echo '<td class="rightpart">';
+				//		echo $data[2];
+				//	echo '</td>';
+				//echo '</tr>';
 			}
-			echo '</table>';
+			//echo '</table>';
 		}
 	}
 }
