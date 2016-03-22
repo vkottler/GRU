@@ -58,7 +58,7 @@ function showAllSubjects() {
 		else {
 			echo '<table>';
 			echo '<tr>';
-			echo '<td class="leftpart"><span><h2>Subject</h2> <a href="create_subject.php"><input type="button" value="Create New"></a></span></td>';
+			echo '<td class="leftpart" style="display:inline;"><h2>Subject</h2> <a href="create_subject.php"><input type="button" value="Create New"></a></td>';
 			echo '<td class="rightpart"><b>Description</b></td>';
 			echo '</tr>';
 			for ($i = 0; $i < $num_rows; $i++) {
