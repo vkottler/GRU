@@ -6,10 +6,13 @@ include 'functions.php';
 echo '<h2>Class</h2>';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	echo var_dump($_POST);
+	$sql = "UPDATE `forumData`.`classes` SET `class_description`='".$_POST['new_description']."'
+			WHERE `class_id`=".$_POST['curr_id'];
+	$result = $conn->query($sql);
+	if (!$result) echo 'Uh oh. Something went wrong!';
+	else echo 'Class Description has been updated.<br>';
 }
 
-else {
 if (isset($_GET['id'])) {
 	$classData = $conn->query(getClassData($_GET['id']));
 	if ($classData->num_rows != 1) echo 'Class not found.';
@@ -22,6 +25,7 @@ if (isset($_GET['id'])) {
 		
 		$classForm = '<form action="" method="post">
 		              <textarea name="new_description">'.$data[2].'</textarea><br>
+		              <input type="hidden" name="curr_id" value='.$_GET['id'].'>
 		              <input type="submit" value="Submit">
 		              </form>';
 		
@@ -31,7 +35,6 @@ if (isset($_GET['id'])) {
 	}
 }
 else echo 'No Class specified.';
-}
 
 include 'footer.php';
 ?>
