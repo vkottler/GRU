@@ -57,11 +57,15 @@ function showAllSubjects() {
 		if ($num_rows == 0) echo 'No Subjects have been created yet!';
 		else {
 			echo '<table>';
+			echo '<tr>';
+			echo '<td class="leftpart"><h2>Subject</h2></td>';
+			echo '<td class="rightpart"><b>Description</b></td>';
+			echo '</tr>';
 			for ($i = 0; $i < $num_rows; $i++) {
 				$data = $result->fetch_row();
 				echo '<tr>';
 					echo '<td class="leftpart">';
-						echo '<h3><a href="category.php?id='.$data[0].'">'.$data[1].'</a></h3>';
+						echo '<h3><a href="subject.php?id='.$data[0].'">'.$data[1].'</a></h3>';
 					echo '</td>';
 					echo '<td class="rightpart">';
 						echo $data[2];
