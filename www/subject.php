@@ -1,9 +1,10 @@
 <?php
 include 'connect.php';
 include 'header.php';
+include 'functions.php';
 
 if (isset($_GET['id'])) {
-	$subjectData = getData("subject", $_GET['id']);
+	$subjectData = $conn->query(getData("subject", $_GET['id']));
 	if ($subjectData->num_rows != 1) {
 		echo 'Subject not found.';
 	}

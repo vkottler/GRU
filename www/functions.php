@@ -117,15 +117,13 @@ function showAllSubjects() {
 }
 
 function getData($table, $index) {
-	global $conn;
 	$sql = 'SELECT * FROM `forumData`.`'.$table.'` WHERE '.$table.'_id='.$index;
-	return $conn->query($sql);
+	return $sql;
 }
 
 function getClassData($index) {
-	global $conn;
 	$sql = 'SELECT * FROM `forumData`.`classes` WHRE class_id='.$index;
-	return $conn->query($sql);
+	return $sql;
 }
 
 ?>
