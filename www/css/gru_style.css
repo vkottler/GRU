@@ -52,11 +52,11 @@ table {
 }
  
 table a {
-    color: #000;
+    color: #6d0808;
 }
  
 table a:hover {
-    color:#373737;
+    color:#8a0707;
     text-decoration: none;
 }
  
@@ -88,11 +88,11 @@ h3 {margin: 0; padding: 0;}
 }
  
 .leftpart {
-    width: 70%;
+    width: 30%;
 }
  
 .rightpart {
-    width: 30%;
+    width: 70%;
 }
  
 .small {
