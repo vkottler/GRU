@@ -26,7 +26,9 @@ function createClassForm() {
 		  $num_rows = $result->num_rows;
 		  for ($i = 0; $i < $num_rows; $i++) {
 		  	  $data = $result->fetch_row();
-		      echo '<option value='.$data[0].'>'.$data[1].'</option>';
+		      echo '<option ';
+		      if ($data[0] = $_GET['id']) echo 'selected';
+		      echo ' value='.$data[0].'>'.$data[1].'</option>';
 		  }
 		  echo '</select><br><br>
 		  <input type="submit" value="Submit">
@@ -52,7 +54,7 @@ function buildSubQuery($name, $description) {
 }
 
 function buildClassQuery($name, $description, $subject, $user) {
-	$sql = 'INSERT INTO `forumData`.`classes` (`class_name`, `class_sub`, `class_by`, `class_date`)
+	$sql = 'INSERT INTO `forumData`.`classes` (`class_name`, `class_description`, class_sub`, `class_by`, `class_date`)
 			VALUES ("'.$name.'", "'.$description.'", '.$subject.', '.$user.', NOW())';
 	return $sql;
 }
@@ -90,7 +92,7 @@ function showAllSubjects() {
 				echo '<tr>';
 					echo '<td class="leftpart">';
 						echo '<h3 style="display:inline-block;"><a href="subject.php?id='.$data[0].'">'.$data[1].'</a></h3>&nbsp;&nbsp;&nbsp;&nbsp;
-								<form action="create_class.php" method="get" style="display:inline-block;"><input type="hidden" value='.$data[0].'><input type="submit" value="Add Class"></form>';
+								<form action="create_class.php" method="get" style="display:inline-block;"><input type="hidden" name="id" value='.$data[0].'><input type="submit" value="Add Class"></form>';
 					echo '</td>';
 					echo '<td class="rightpart">';
 						echo $data[2];
