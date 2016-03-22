@@ -91,7 +91,7 @@ function showAllSubjects() {
 						echo '<h3><a href="subject.php?id='.$data[0].'">'.$data[1].'</a></h3>';
 					echo '</td>';
 					echo '<td class="rightpart">';
-						echo $data[2];
+						echo $data[2].' <form action="create_class.php" style="display:inline-block;"><input type="submit" value="Add Class"></form>';
 					echo '</td>';
 				echo '</tr>';
 			}
