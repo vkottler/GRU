@@ -9,7 +9,8 @@ function showClassDescForm(divShow, divHide) {
 	<?php if ($_SESSION['user_level'] > 1) { ?>
     hideForm(divHide);
 	<?php } else { ?>
-	document.getElementById(divShow).innerHTML = "You don't have the authority to do that!";
+	document.getElementById(divShow).innerHTML = "<b>You don't have the authority to do that!</b>";
+	document.getElementById(divShow).style.color = "red";
 	<?php } ?>
 }
 
