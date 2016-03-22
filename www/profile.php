@@ -16,6 +16,7 @@ else if ($_SESSION['loggedin'] == true && strcmp($_GET['view'],"edit") == 0 && $
 
 //viewing someone's profile
 else {
+	printf("Your ID: %d ID for page: %d mode: %s", $_GET['id'], $_SESSION['user_id'], $_GET['view']);
 	echo 'Viewing someone else\'s profile.';
 }
 
