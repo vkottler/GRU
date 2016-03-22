@@ -3,9 +3,12 @@ include 'connect.php';
 include 'header.php';
 include 'functions.php';
 
-echo 'for viewing classes';
-
-echo var_dump($_GET);
+if (isset($_GET['id'])) {
+	printf("You are looking at information for Class %d.", $_GET['id']);
+}
+else {
+	echo 'No Class specified.';
+}
 
 include 'footer.php';
 ?>

@@ -74,6 +74,7 @@ function buildSigninQuery($uname, $pass) {
 
 function showAllSubjects() {
 	global $conn;
+	$fourSpaces = '&nbsp;&nbsp;&nbsp;&nbsp;';
 	$sql = "SELECT * FROM `forumData`.`subject`;";
 	$result = $conn->query($sql);
 	if (!$result) echo 'Subjects cannot be viewed at this time.';
@@ -105,7 +106,7 @@ function showAllSubjects() {
 					for ($j = 0; $j < $num_rows2; $j++) {
 						$data2 = $result2->fetch_row();
 						echo '<tr>';
-						echo '<td>'.$data2[1].'</td><td></td>';
+						echo '<td>'.$fourSpaces.'<a href="class.php?id='.$data2[0].'">'.$data2[1].'</a></td><td>'.$data[2].'</td>';
 						echo '</tr>';
 					}
 				}
