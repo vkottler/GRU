@@ -126,4 +126,15 @@ function getClassData($index) {
 	return $sql;
 }
 
+function userFullNameFromID($id) {
+	global $conn;
+	$sql = 'SELECT * FROM `forumData`.`users` WHERE user_id='.$id;
+	$result = $conn->query($sql);
+	if ($result->num_rows != 1) return "";
+	else {
+		$data = $result->fetch_row();
+		return $data[1].' '.$data[2];
+	}
+}
+
 ?>

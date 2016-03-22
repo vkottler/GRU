@@ -3,6 +3,8 @@ include 'connect.php';
 include 'header.php';
 include 'functions.php';
 
+echo '<h2>Subject</h2>';
+
 if (isset($_GET['id'])) {
 	$subjectData = $conn->query(getData("subject", $_GET['id']));
 	if ($subjectData->num_rows != 1) {
@@ -10,7 +12,7 @@ if (isset($_GET['id'])) {
 	}
 	else {
 		$data = $subjectData->fetch_row();
-		echo '<h2>'.$data[1].'</h2>';
+		echo '<h3>'.$data[1].'</h3>';
 		echo $data[2];
 	}
 }
