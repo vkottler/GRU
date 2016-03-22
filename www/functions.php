@@ -27,7 +27,8 @@ function createClassForm() {
 		  for ($i = 0; $i < $num_rows; $i++) {
 		  	  $data = $result->fetch_row();
 		      echo '<option value='.$data[0];
-		      if ($data[0] == $_GET['id']) echo ' selected="selected">';
+		      if ($data[0] == $_GET['id']) echo ' selected="selected"';
+		      echo '>';
 		      echo $data[1].'</option>';
 		  }
 		  echo '</select><br><br>
