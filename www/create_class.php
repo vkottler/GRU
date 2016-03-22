@@ -2,7 +2,7 @@
 include 'connect.php';
 include 'header.php';
 
-echo 'Placeholder page for adding classes';
-echo "test upload";
+echo 'test commit';
+
 include 'footer.php';
 ?>
