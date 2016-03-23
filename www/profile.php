@@ -10,12 +10,16 @@ if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET
 
 // editting your own profile
 else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] == $_SESSION['user_id']) {
+	$sql = 'SELECT * FROM `forumData`.`users` WHERE user_id='.$id;
+	$result = $conn->query($sql);
+	$data = $result->fetch_row();
+
 	
-	echo "Name: ".userFullNameFromID($data[4]).'<br>';
-	echo "Username: ".$_SESSION['user_name'].'<br>';
-	echo "Email: ".$_SESSION['user_email'].'<br>';
-	echo "Password: ".$_SESSION['user_pass'].'<br>';
-	echo "Level: ".$_SESSION['user_level'].'<br> <a> Edit</a>';
+	echo "Name: ".$data[1] .' '. $data[2].'<br>';
+	echo "Username: ".$data[3].'<br>';
+	echo "Email: ".$data[6].'<br>';
+	echo "Password: ".$data[5].'<br>';
+	echo "Level: ".$data[7].'<br> <a> Edit</a>';
 	
 	
 }
