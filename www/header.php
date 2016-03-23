@@ -17,7 +17,7 @@
         <a class="item" href="users.php">List of Users</a>
         <?php 
         if ($_SESSION['signed_in'] == true) {
-        	echo '<a class="item" href="profile.php?view=edit&id='.$_SESSION['user_id'].'">View Profile</a>';
+        	echo '<a class="item" href="profile.php?view=edit&id='.$_SESSION['user_id'].'">Your Profile</a>';
         }
         if ($_SESSION['user_level'] >= 3) {
         	echo '<a class="item" href="admin.php">Admin Home</a>';

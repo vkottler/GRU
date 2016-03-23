@@ -18,7 +18,7 @@ if (isset($_GET['id'])) {
 	if ($classData->num_rows != 1) echo 'Class not found.';
 	else {
 		$data = $classData->fetch_row();
-		echo '<h2>'.$data[1].'</h2><hr><br>';
+		echo '<h2>'.$data[1].'</h2>';
 		
 		$jsArg1 = "'classDescription'";
 		$jsArg2 = "'currDescription'";
@@ -29,7 +29,7 @@ if (isset($_GET['id'])) {
 		              <input type="submit" value="Submit">
 		              </form>';
 		
-		echo '<div id="currDescription">'.$data[2].$fourSpaces.'<input type="button" value="Edit Description" onClick="javascript:showClassDescForm('.$jsArg1.', '.$jsArg2.')" style="display:inline-block;"></div>';
+		echo '<div id="currDescription">'.$data[2].$fourSpaces.'<input type="button" value="Edit Description" onClick="javascript:showClassDescForm('.$jsArg1.', '.$jsArg2.')" style="display:inline-block;"></div><br><hr><br>';
 		echo '<div id="classDescription" style="display:none">'.$classForm.'</div>';
 		echo '<br><br><i>Added by: '.userFullNameFromID($data[4]).'</i>';
 	}

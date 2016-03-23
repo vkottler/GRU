@@ -8,8 +8,8 @@ if (isset($_GET['id'])) {
 	if ($subjectData->num_rows != 1) echo 'Subject not found.';
 	else {
 		$data = $subjectData->fetch_row();
-		echo '<h2>'.$data[1].'</h2><hr><br>';
-		echo $data[2];
+		echo '<h2>'.$data[1].'</h2>';
+		echo $data[2].'<br><hr><br>';
 	}
 }
 else echo 'No Class specified.';
