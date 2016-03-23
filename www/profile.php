@@ -10,8 +10,8 @@ if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET
 
 // editting your own profile
 else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] == $_SESSION['user_id']) {
-	global $conn;
-	$sql = 'SELECT * FROM `forumData`.`users` WHERE user_id='.$id;
+
+	$sql = 'SELECT * FROM `forumData`.`users` WHERE user_id='.$_GET['id'];
 	$result = $conn->query($sql);
 	$data = $result->fetch_row();
 
