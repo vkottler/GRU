@@ -16,11 +16,11 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	$data = $result->fetch_row();
 
 	
-	echo "Name: ".$data[1] .' '. $data[2].'<br>';
-	echo "Username: ".$data[3].'<br>';
-	echo "Email: ".$data[6].'<br>';
-	echo "Password: ".sha1($data[5]).'<br>';
-	echo "Level: ".$data[8].'<br> <a> Edit</a>';
+	echo "Name: ".$data[1] .' '. $data[2].'<a> Edit</a><br>';
+	echo "Username: ".$data[3].'<a> Edit</a><br>';
+	echo "Email: ".$data[6].'<a> Edit</a><br>';
+	echo 'Change Password <br>';
+	echo "Level: ".$data[8];
 	
 }
 
