@@ -19,8 +19,8 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	echo "Name: ".$data[1] .' '. $data[2].'<br>';
 	echo "Username: ".$data[3].'<br>';
 	echo "Email: ".$data[6].'<br>';
-	echo "Password: ".$data[5].'<br>';
-	echo "Level: ".$data[7].'<br> <a> Edit</a>';
+	echo "Password: ".sha1($data[5]).'<br>';
+	echo "Level: ".$data[8].'<br> <a> Edit</a>';
 	
 }
 
