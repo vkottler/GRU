@@ -16,10 +16,10 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	$data = $result->fetch_row();
 
 	
-	echo "Name: ".$data[1] .' '. $data[2].'<a type="button" value="Edit"></a><br>';
-	echo "Username: ".$data[3].'<a type="button" value="Edit"></a><br>';
-	echo "Email: ".$data[6].'<a type="button" value="Edit"></a><br>';
-	echo '<a type="button" value="Change Password"> <a><br>';
+	echo "Name: ".$data[1] .' '. $data[2].'<input type="submit" value="Edit"></input><br>';
+	echo "Username: ".$data[3].'<input type="submit" value="Edit"><br>';
+	echo "Email: ".$data[6].'<input type="submit" value="Edit"><br>';
+	echo '<input type="submit" value="Change Password"> <br>';
 	echo "Level: ".$data[8];
 	
 }
