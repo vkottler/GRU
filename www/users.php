@@ -14,7 +14,7 @@ else {
 	for ($i = 0; $i < $num_rows; $i++) {
 		$data = $result->fetch_row();
 		$date = date_create($data[7]);
-		$date = date_format($date, "Y/m/d");
+		$date = date_format($date, "m/d/Y");
 		echo '<tr>';
 		echo '<td><a href="profile.php?id='.$data[0].'">'.$data[3].'</a></td>';
 		echo '<td>Joined: '.$date.'</td>';
