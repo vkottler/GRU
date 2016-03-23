@@ -13,11 +13,11 @@ else {
 	$num_rows = $result->num_rows;
 	for ($i = 0; $i < $num_rows; $i++) {
 		$data = $result->fetch_row();
-		$date = date_create($data[3]);
+		$date = date_create($data[7]);
 		$date = date_format($date, "Y/m/d");
 		echo '<tr>';
-		echo '<td><a href="profile.php?id='.$data[0].'">'.$date.'</a></td>';
-		echo '<td>Joined: '.$data[7].'</td>';
+		echo '<td><a href="profile.php?id='.$data[0].'">'.$data[3].'</a></td>';
+		echo '<td>Joined: '.$date.'</td>';
 		echo '</tr>';
 	}
 }
