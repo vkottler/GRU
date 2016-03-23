@@ -21,7 +21,6 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	echo "Password: ".$data[5].'<br>';
 	echo "Level: ".$data[7].'<br> <a> Edit</a>';
 	
-	
 }
 
 //viewing someone's profile
