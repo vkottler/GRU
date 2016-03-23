@@ -50,6 +50,7 @@ else {
                     $_SESSION['user_fname']  = $row[1];
                     $_SESSION['user_level'] = $row[2];
                     echo 'Welcome, ' . $_SESSION['user_fname'] . '. <a href="index.php">Proceed to the forum overview</a>.';
+                    echo '<META http-equiv="refresh" content="1;URL=index.php">';
                     $result->close();
                 }
             }

@@ -14,6 +14,7 @@
     <div id="wrapper">
     <div id="menu">
         <a class="item" href="index.php">Home</a>
+        <a class="item" href="users.php">List of Users</a>
         <?php 
         if ($_SESSION['signed_in'] == true) {
         	echo '<a class="item" href="profile.php?view=edit&id='.$_SESSION['user_id'].'">View Profile</a>';
