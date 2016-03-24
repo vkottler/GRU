@@ -20,7 +20,7 @@ echo "<script>
 }
 		</script>";
 	echo "Name: ".$data[1] .' '. $data[2].' '. '<input type="submit" value="Edit" onClick="displayTextBox()"><br>';
-	echo "Username: ".$data[3].' '. '<button value="Edit" onClick="displayTextBox()">Edit</button><br>';
+	echo "Username: ".$data[3].' '. '<a href="JavaScript:void(0)" onClick="displayTextBox()">Edit</a><br>';
 	echo "Email: ".$data[6].' '. '<input type="submit" value="Edit"><br>';
 	echo '<input type="submit" value="Change Password"> <br>';
 	echo "Level: ".$data[8];
