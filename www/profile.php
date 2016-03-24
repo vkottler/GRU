@@ -16,7 +16,7 @@ if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET
 else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] == $_SESSION['user_id']) {
 echo "<script>
 		function changeName(){
-		document.getElementById('name').innerHTML=" . $data[1] . ' ' . $data[2] . "'<input type=\"text\"> <input type=\"submit\" value=\"Change\" onClick=\"\">';
+		document.getElementById('name').innerHTML='<input type=\"text\"> <input type=\"submit\" value=\"Change\" onClick=\"\">';
 }
 		function changeUsername(){
 		document.getElementById('username').innerHTML='<input type=\"text\"> <input type=\"submit\" value=\"Change\" onClick=\"\">';
