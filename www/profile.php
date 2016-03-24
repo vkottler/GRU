@@ -16,7 +16,7 @@ if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET
 else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] == $_SESSION['user_id']) {
 echo "<script>
 		function displayTextBox(){
-		return '<input type=\"text\" name=\"firstname\">';
+		 innerHTML=<input type=\"text\" name=\"firstname\">;
 }
 		</script>";
 	echo "Name: ".$data[1] .' '. $data[2].' '. '<input type="submit" value="Edit" onClick="displayTextBox()"><br>';
