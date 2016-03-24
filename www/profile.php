@@ -25,7 +25,7 @@ echo "<script>
 		document.getElementById('email').innerHTML='<input type=\"text\"> <input type=\"submit\" value=\"Change\" onClick=\"\">';
 }
 		function changePassword(){
-		document.getElementById('password').innerHTML='<input type=\"text\"> <input type=\"submit\" value=\"Change\" onClick=\"\">';
+		document.getElementById('password').innerHTML='Password: <input type=\"text\"> <input type=\"submit\" value=\"Change\" onClick=\"\">';
 }
 		</script>";
 
