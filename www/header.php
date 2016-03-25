@@ -7,7 +7,7 @@
     <meta name="description" content="A short description." />
     <meta name="keywords" content="put, keywords, here" />
     <title>GRU</title>
-    <link rel="stylesheet" href="/var/git/GRUsite/css/gru_style.css" type="text/css">
+    <link rel="stylesheet" href="/var/git/GRUsite/www/css/gru_style.css" type="text/css">
 </head>
 <body>
 <h1>GRU</h1>
