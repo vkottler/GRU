@@ -1,7 +1,8 @@
-<?php include '../connect.php'; include '../header.php'; ?>
+<html>
+<?php include '../connect.php'; ?>
 
-
+<body>
 Home page for testing Angular.
+</body>
 
-	
-<?php include '../footer.php'; ?>
+</html>

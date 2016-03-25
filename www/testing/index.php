@@ -1,7 +1,8 @@
-<?php include '../connect.php'; include '../header.php'; ?>
+<html>
+<?php include '../connect.php'; ?>
 
-
+<body>
 Home page for testing various things.
+</body>
 
-	
-<?php include '../footer.php'; ?>
+</html>
