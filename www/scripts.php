@@ -4,37 +4,13 @@
 function revealForm(divName) { document.getElementById(divName).style.display = "block"; }
 function hideForm(divName) { document.getElementById(divName).style.display = "none"; }
 
-function changeHTMLback(id) { 
-	document.getElementById(id).innerHTML = '<input type="" value= "" onclick="">';
+function changeHTMLback(id, form) { 
+	document.getElementById(id).innerHTML = '<input type="button" value= "Edit" onclick="changeAttribute(' + id + ', ' + form + ')">';
 }
-
 
 function changeAttribute(id, form) {
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(' + id + ')">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(' + id + ', ' + form + ')">';
 	document.getElementById(id).innerHTML = newHTML;
-	revealForm(form);
-}
-function changeName(form) {
-	var newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onClick="changeHTMLback(\'name\')">';
-	document.getElementById('name').innerHTML = newHTML;
-	revealForm(form);
-}
-
-function changeUsername(form) {
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'username\')">';
-	document.getElementById('username').innerHTML = newHTML;
-	revealForm(form);
-}
-	
-function changeEmail(form) {
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'email\')">';
-	document.getElementById('email').innerHTML = newHTML;
-	revealForm(form);
-}
-	
-function changePassword(form) {
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'password\')">';
-	document.getElementById('password').innerHTML = newHTML;
 	revealForm(form);
 }
 
