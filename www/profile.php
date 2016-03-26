@@ -17,7 +17,7 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	
 	echo '<form action="" method="post">';
 	
-	echo "Name: ".$data[1].' '. $data[2].'<div id="name"><input type="submit" style="display:block-inline;" value="Edit" onClick="changeName(\'profileForm\')"></div>';
+	echo "Name: ".$data[1].' '. $data[2].'<div id="name" style="display:block-inline;" ><input type="submit" value="Edit" onClick="changeName(\'profileForm\')"></div>';
 	echo "Username: ".$data[3].' '. '	  <div id="username"><input type="submit" value="Edit" onClick="changeUsername(\'profileForm\')"></div>';
 	echo "Email: ".$data[6].' '. '		  <div id="email"><input type="submit" value="Edit" onClick="changeEmail(\'profileForm\')"></div>';
 	echo '								  <div id="password"><input type="submit" value="Change Password" onClick="changePassword(\'profileForm\')"></div>';
