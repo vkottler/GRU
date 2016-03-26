@@ -17,7 +17,7 @@ function changeAttribute(id, form) {
 	var newHTML;
 	if (id === 'name') newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onclick="changeHTMLback(\''+id+'\', \''+form+'\')">';
 	else if (id === 'password') { 
-		newHTML = '<table><tr><td>New Password:</td>' + 
+		newHTML = '<table class="leftpart"><tr><td>New Password:</td>' + 
 			'<td><input type="password"></td></tr>' + 
 			'<tr><td>Confirm:</td><td><input type="password"></td></tr>' + 
 			'<tr><td></td><td><input type="button" value="Hide" onclick="changeHTMLback(\'' + id + '\', \'' + form + '\')"></td></tr></table>';
