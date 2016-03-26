@@ -8,7 +8,7 @@ function hideForm(divName) { document.getElementById(divName).style.display = "n
 
 function changeHTMLback(id, form) { 
 	if (id === 'password') document.getElementById(id).innerHTML = '<input type="button" value="Change Password" onclick="changeAttribute(\''+id+'\', \''+form+'\')">';
-	document.getElementById(id).innerHTML = '<input type="button" value="Edit" onclick="changeAttribute(\'' + id + '\', \'' + form + '\')">';
+	else document.getElementById(id).innerHTML = '<input type="button" value="Edit" onclick="changeAttribute(\'' + id + '\', \'' + form + '\')">';
 	shown--;
 	if (shown == 0) hideForm(form);
 }
@@ -17,7 +17,7 @@ function changeAttribute(id, form) {
 	var newHTML;
 	if (id === 'name') newHTML = 'First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onclick="changeHTMLback(\''+id+'\', \''+form+'\')">';
 	else if (id === 'password') newHTML = '<input type="text"> <input type="password" value="Hide" onclick="changeHTMLback(\'' + id + '\', \'' + form + '\')">';
-	newHTML = '<input type="text"> <input type="button" value="Hide" onclick="changeHTMLback(\'' + id + '\', \'' + form + '\')">';
+	else newHTML = '<input type="text"> <input type="button" value="Hide" onclick="changeHTMLback(\'' + id + '\', \'' + form + '\')">';
 	document.getElementById(id).innerHTML = newHTML;
 	revealForm(form);
 	shown++;
