@@ -5,11 +5,11 @@ function revealForm(divName) { document.getElementById(divName).style.display = 
 function hideForm(divName) { document.getElementById(divName).style.display = "none"; }
 
 function changeHTMLback(id, form) { 
-	document.getElementById(id).innerHTML = '<input type="button" value= "Edit" onclick="changeAttribute(' + id + ', ' + form + ')">';
+	document.getElementById(id).innerHTML = '<input type="button" value= "Edit" onclick="changeAttribute(\'' + id + '\', \'' + form + '\')">';
 }
 
 function changeAttribute(id, form) {
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(' + id + ', ' + form + ')">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'' + id + '\', \'' + form + '\')">';
 	document.getElementById(id).innerHTML = newHTML;
 	revealForm(form);
 }
