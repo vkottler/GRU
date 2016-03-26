@@ -8,8 +8,7 @@ $result = $conn->query($sql);
 $data = $result->fetch_row();
 
 // if we get here, user is trying to update their profile
-if (isset($_POST)) {
-	echo var_dump($_POST).'<br>';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	echo 'You cannot update your profile at this time. It is being implemented very soon!<br><br>';
 }
 
