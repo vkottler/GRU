@@ -7,6 +7,11 @@ $sql = 'SELECT * FROM `forumData`.`users` WHERE user_id='.$_GET['id'];
 $result = $conn->query($sql);
 $data = $result->fetch_row();
 
+// if we get here, user is trying to update their profile
+if (isset($_POST)) {
+	echo 'You cannot update your profile at this time. It is being implemented very soon!<br><br>';
+}
+
 // don't allow people to manipulate URL to edit other people's profiles
 if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] != $_SESSION['user_id']) {
 	echo 'You can only edit your own profile!';
