@@ -16,7 +16,7 @@ function changeHTMLback(id, form) {
 function changeAttribute(id, form) {
 	var newHTML;
 	if (id === 'name') newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onclick="changeHTMLback(\''+id+'\', \''+form+'\')">';
-	else if (id === 'password') newHTML = '<input type="password"> <input type="button" value="Hide" onclick="changeHTMLback(\'' + id + '\', \'' + form + '\')">';
+	else if (id === 'password') newHTML = '<br>New Password: <input type="password"><br>Confirm: <input type="password"><br><input type="button" value="Hide" onclick="changeHTMLback(\'' + id + '\', \'' + form + '\')">';
 	else newHTML = '<input type="text"> <input type="button" value="Hide" onclick="changeHTMLback(\'' + id + '\', \'' + form + '\')">';
 	document.getElementById(id).innerHTML = newHTML;
 	revealForm(form);
