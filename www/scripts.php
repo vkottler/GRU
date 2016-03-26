@@ -4,23 +4,37 @@
 function revealForm(divName) { document.getElementById(divName).style.display = "block"; }
 function hideForm(divName) { document.getElementById(divName).style.display = "none"; }
 
+function changeHTMLback(id, oldHTML) { document.getElementById(id).innerHTML = oldHTML; }
+
 function changeName(form) {
-	document.getElementById('name').innerHTML = '<input type="text"> <input type="submit" value="Change" onClick="">';
+	var oldHTML = document.getElementById('name').innerHTML;
+	var newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onClick="changeHTMLback(\'name\', \'' 
+		+ oldHTML + '\')">';
+	document.getElementById('name').innerHTML = newHTML;
 	revealForm(form);
 }
 
 function changeUsername(form) {
-	document.getElementById('username').innerHTML = '<input type="text"> <input type="submit" value="Change" onClick="">';
+	var oldHTML = document.getElementById('username').innerHTML;
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'username\', \''
+		+ oldHTML + '\')">';
+	document.getElementById('username').innerHTML = newHTML;
 	revealForm(form);
 }
 	
 function changeEmail(form) {
-	document.getElementById('email').innerHTML = '<input type="text"> <input type="submit" value="Change" onClick="">';
+	var oldHTML = document.getElementById('email').innerHTML;
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'email\', \''
+		+ oldHTML + '\')">';
+	document.getElementById('email').innerHTML = newHTML;
 	revealForm(form);
 }
 	
 function changePassword(form) {
-	document.getElementById('password').innerHTML = 'Password: <input type="text"> <input type="submit" value="Change" onClick="">';
+	var oldHTML = document.getElementById('password').innerHTML;
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'password\', \''
+		+ oldHTML + '\')">';
+	document.getElementById('password').innerHTML = newHTML;
 	revealForm(form);
 }
 
