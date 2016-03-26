@@ -19,8 +19,8 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	
 	echo "Name: ".$data[1].' '. $data[2].'<span id="name"><input type="button" value="Edit" onClick="changeAttribute(\'name\', \'profileForm\')"></span><br>';
 	echo "Username: ".$data[3].' '. '	  <span id="username"><input type="button" value="Edit" onClick="changeAttribute(\'username\', \'profileForm\')"></span><br>';
-	echo "Email: ".$data[6].' '. '		  <span id="email"><input type="button" value="Edit" onClick="changeEmail(\'email\', \'profileForm\')"></span><br>';
-	echo '								  <span id="password"><input type="button" value="Change Password" onClick="changePassword(\'password\', \'profileForm\')"></span><br>';
+	echo "Email: ".$data[6].' '. '		  <span id="email"><input type="button" value="Edit" onClick="changeAttribute(\'email\', \'profileForm\')"></span><br>';
+	echo '								  <span id="password"><input type="button" value="Change Password" onClick="changeAttribute(\'password\', \'profileForm\')"></span><br>';
 	echo "Level: ".$data[8];
 	
 	echo '<br><br><div id="profileForm" style="display:none"><input type="submit" value="Update Fields"></div></form>';

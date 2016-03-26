@@ -10,7 +10,7 @@ function changeHTMLback(id) {
 
 
 function changeAttribute(id, form) {
-	var newHTML = '<input type="text" value="Hide" onClick="changeHTMLback(' + id + ')">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(' + id + ')">';
 	document.getElementById(id).innerHTML = newHTML;
 	revealForm(form);
 }
