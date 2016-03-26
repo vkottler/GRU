@@ -16,10 +16,10 @@ if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET
 // editting your own profile
 else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] == $_SESSION['user_id']) {
 
-	echo "Name: ".$data[1].' '. $data[2].'<div id="name"><input type="submit" value="Edit" onClick="changeName()"><div>';
-	echo "Username: ".$data[3].' '. '<div id="username"><input type="submit" value="Edit" onClick="changeUsername()"><div>';
-	echo "Email: ".$data[6].' '. '<div id="email"><input type="submit" value="Edit" onClick="changeEmail()"><div>';
-	echo '<div id="password"><input type="submit" value="Change Password" onClick="changePassword()"><div>';
+	echo "Name: ".$data[1].' '. $data[2].'<div id="name"><input type="submit" value="Edit" onClick="changeName()"></div>';
+	echo "Username: ".$data[3].' '. '	  <div id="username"><input type="submit" value="Edit" onClick="changeUsername()"></div>';
+	echo "Email: ".$data[6].' '. '		  <div id="email"><input type="submit" value="Edit" onClick="changeEmail()"></div>';
+	echo '								  <div id="password"><input type="submit" value="Change Password" onClick="changePassword()"></div>';
 	echo "Level: ".$data[8];
 	
 }
