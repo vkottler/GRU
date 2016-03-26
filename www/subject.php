@@ -25,8 +25,7 @@ if (isset($_GET['id'])) {
 		}
 	}
 }
-else echo 'No Class specified.';
-
+else showAllSubjects();
 
 include 'footer.php';
 ?>
