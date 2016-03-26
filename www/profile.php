@@ -9,6 +9,7 @@ $data = $result->fetch_row();
 
 // if we get here, user is trying to update their profile
 if (isset($_POST)) {
+	echo var_dump($_POST).'<br>';
 	echo 'You cannot update your profile at this time. It is being implemented very soon!<br><br>';
 }
 
