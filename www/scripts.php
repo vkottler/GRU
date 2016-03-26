@@ -38,4 +38,17 @@ function showClassDescForm(divShow, divHide) {
 	<?php } ?>
 }
 
+function checkUname(id, toChange) {
+	<?php $usernames = getAllUsernames(); ?>
+	var usernames = [
+	<?php 
+		for ($i = 1; $i < $usernames[0] + 1; $i++) {
+			if ($i == $usernames[0]) echo '"'.$usernames[$i].'"';
+			else echo '"'.$usernames[$i].'", ';
+		}
+	?>
+	];
+	document.getElementById("testing").innerHTML = usernames;
+}
+
 </script>

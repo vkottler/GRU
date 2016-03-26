@@ -20,8 +20,8 @@ else {
 			// the user name exists
 			if (! ctype_alnum ( $_POST ['user_name'] ))
 				$errors [] = 'The username can only contain letters and digits.';
-			if (strlen ( $_POST ['user_name'] ) > 30)
-				$errors [] = 'The username cannot be longer than 30 characters.';
+			if (strlen($_POST['user_name']) > 15 || strlen($_POST['user_name']) < 5)
+				$errors [] = 'Username must be between 5 and 15 characters.';
 		} else
 			$errors [] = 'The username field must not be empty.';
 		
@@ -37,7 +37,7 @@ else {
 			echo 'Uh-oh.. a couple of fields are not filled in correctly..';
 			echo '<ul>';
 			foreach ( $errors as $key => $value) /* walk through the array so all the errors get displayed */
-      		echo '<li>' . $value . '</li>'; /* this generates a nice error list */
+      		echo '<li style="color:red">' . $value . '</li>'; /* this generates a nice error list */
 			echo '</ul><br>';
 		} 
 		else {
@@ -52,6 +52,8 @@ else {
 		}
 	}
 }
+
+echo '<div id="testing"></div>';
 
 if ($_SESSION['signed_in']) { ?>
 <script type="text/javascript">

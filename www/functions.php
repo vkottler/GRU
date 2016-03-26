@@ -40,12 +40,26 @@ function signupForm() {
 	echo '<form method="post" action="">
     	First name: <input type="text" name="user_fname" /><br>
     	Last name: <input type="text" name="user_lname" /><br>
-        Username: <input type="text" name="user_name" /><br>
-        Password: <input type="password" name="user_pass"><br>
+        Username: <input type="text" id="user_name" name="user_name" onchange="checkUname(\'user_name\', \'uname_feedback\')" /><span id="uname_feedback"></span><br>
+        Password: <input type="password" name="user_pass"> (cannot be empty)<br>
         Password again: <input type="password" name="user_pass_check"><br>
         E-mail: <input type="email" name="user_email"><br><br>
         <input type="submit" value="Sign Up" />
      </form>';
+}
+
+function getAllUsernames() {
+	$retval = array();
+	global $conn;
+	$sql = "SELECT `user_name` FROM `forumData`.`users`;";
+	$result = $conn->query($sql);
+	$num_rows = $result->num_rows;
+	$retval[0] = $num_rows;
+	for ($i = 1; $i < $num_rows + 1; $i++) {
+		$data = $result->fetch_row();
+		$retval[$i] = $data[0];
+	}
+	return $retval;
 }
 
 function buildSubQuery($name, $description) {
