@@ -4,20 +4,24 @@
 function revealForm(divName) { document.getElementById(divName).style.display = "block"; }
 function hideForm(divName) { document.getElementById(divName).style.display = "none"; }
 
-function changeName() {
+function changeName(form) {
 	document.getElementById('name').innerHTML = '<input type="text"> <input type="submit" value="Change" onClick="">';
+	revealForm(form);
 }
 
-function changeUsername() {
+function changeUsername(form) {
 	document.getElementById('username').innerHTML = '<input type="text"> <input type="submit" value="Change" onClick="">';
+	revealForm(form);
 }
 	
-function changeEmail() {
+function changeEmail(form) {
 	document.getElementById('email').innerHTML = '<input type="text"> <input type="submit" value="Change" onClick="">';
+	revealForm(form);
 }
 	
-function changePassword() {
+function changePassword(form) {
 	document.getElementById('password').innerHTML = 'Password: <input type="text"> <input type="submit" value="Change" onClick="">';
+	revealForm(form);
 }
 
 function showClassDescForm(divShow, divHide) {
