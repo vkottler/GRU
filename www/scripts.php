@@ -4,32 +4,36 @@
 function revealForm(divName) { document.getElementById(divName).style.display = "block"; }
 function hideForm(divName) { document.getElementById(divName).style.display = "none"; }
 
-function changeHTMLback(id, oldHTML) { document.getElementById(id).innerHTML = oldHTML; }
+function changeHTMLback(id) { 
+	document.getElementById(id).innerHTML = '<input type="" value= "" onclick="">';
+}
 
+
+function changeAttribute(id, form) {
+	var newHTML = '<input type="text" value="Hide" onClick="changeHTMLback(' + id + ')">';
+	document.getElementById(id).innerHTML = newHTML;
+	revealForm(form);
+}
 function changeName(form) {
-	var oldHTML = document.getElementById('name').innerHTML;
-	var newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onClick="changeHTMLback()">';
+	var newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onClick="changeHTMLback(\'name\')">';
 	document.getElementById('name').innerHTML = newHTML;
 	revealForm(form);
 }
 
 function changeUsername(form) {
-	var oldHTML = document.getElementById('username').innerHTML;
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback()">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'username\')">';
 	document.getElementById('username').innerHTML = newHTML;
 	revealForm(form);
 }
 	
 function changeEmail(form) {
-	var oldHTML = document.getElementById('email').innerHTML;
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback()">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'email\')">';
 	document.getElementById('email').innerHTML = newHTML;
 	revealForm(form);
 }
 	
 function changePassword(form) {
-	var oldHTML = document.getElementById('password').innerHTML;
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback()">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'password\')">';
 	document.getElementById('password').innerHTML = newHTML;
 	revealForm(form);
 }
