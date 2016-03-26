@@ -8,32 +8,28 @@ function changeHTMLback(id, oldHTML) { document.getElementById(id).innerHTML = o
 
 function changeName(form) {
 	var oldHTML = document.getElementById('name').innerHTML;
-	var newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onClick="changeHTMLback(\'name\', \'' 
-		+ oldHTML + '\')">';
+	var newHTML = '<br>First: <input type="text"><br>Last: <input type="text"><br><input type="button" value="Hide" onClick="changeHTMLback()">';
 	document.getElementById('name').innerHTML = newHTML;
 	revealForm(form);
 }
 
 function changeUsername(form) {
 	var oldHTML = document.getElementById('username').innerHTML;
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'username\', \''
-		+ oldHTML + '\')">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback()">';
 	document.getElementById('username').innerHTML = newHTML;
 	revealForm(form);
 }
 	
 function changeEmail(form) {
 	var oldHTML = document.getElementById('email').innerHTML;
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'email\', \''
-		+ oldHTML + '\')">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback()">';
 	document.getElementById('email').innerHTML = newHTML;
 	revealForm(form);
 }
 	
 function changePassword(form) {
 	var oldHTML = document.getElementById('password').innerHTML;
-	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback(\'password\', \''
-		+ oldHTML + '\')">';
+	var newHTML = '<input type="text"> <input type="button" value="Hide" onClick="changeHTMLback()">';
 	document.getElementById('password').innerHTML = newHTML;
 	revealForm(form);
 }
