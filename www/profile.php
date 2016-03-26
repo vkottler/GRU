@@ -2,7 +2,6 @@
 include 'connect.php';
 include 'header.php';
 include 'functions.php';
-include 'scripts.php';
 
 $sql = 'SELECT * FROM `forumData`.`users` WHERE user_id='.$_GET['id'];
 $result = $conn->query($sql);
