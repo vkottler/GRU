@@ -17,10 +17,10 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	
 	echo '<form action="" method="post">';
 	
-	echo "Name: ".$data[1].' '. $data[2].'<div id="name" style="display:block-inline;" ><input type="submit" value="Edit" onClick="changeName(\'profileForm\')"></div>';
-	echo "Username: ".$data[3].' '. '	  <div id="username"><input type="submit" value="Edit" onClick="changeUsername(\'profileForm\')"></div>';
-	echo "Email: ".$data[6].' '. '		  <div id="email"><input type="submit" value="Edit" onClick="changeEmail(\'profileForm\')"></div>';
-	echo '								  <div id="password"><input type="submit" value="Change Password" onClick="changePassword(\'profileForm\')"></div>';
+	echo "Name: ".$data[1].' '. $data[2].'<div id="name"><input type="button" value="Edit" onClick="changeName(\'profileForm\')"></div>';
+	echo "Username: ".$data[3].' '. '	  <div id="username"><input type="button" value="Edit" onClick="changeUsername(\'profileForm\')"></div>';
+	echo "Email: ".$data[6].' '. '		  <div id="email"><input type="button" value="Edit" onClick="changeEmail(\'profileForm\')"></div>';
+	echo '								  <div id="password"><input type="button" value="Change Password" onClick="changePassword(\'profileForm\')"></div>';
 	echo "Level: ".$data[8];
 	
 	echo '<br><br><div id="profileForm" style="display:none"><input type="submit" value="Update Fields"></div></form>';
