@@ -16,7 +16,7 @@ if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET
 // editting your own profile
 else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && $_GET['id'] == $_SESSION['user_id']) {
 	
-	echo '<div id="profileForm" style="display:none"><form action="" method="post">';
+	echo '<form action="" method="post">';
 	
 	echo "Name: ".$data[1].' '. $data[2].'<div id="name"><input type="submit" value="Edit" onClick="changeName("profileForm")"></div>';
 	echo "Username: ".$data[3].' '. '	  <div id="username"><input type="submit" value="Edit" onClick="changeUsername("profileForm")"></div>';
@@ -24,7 +24,7 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	echo '								  <div id="password"><input type="submit" value="Change Password" onClick="changePassword("profileForm")"></div>';
 	echo "Level: ".$data[8];
 	
-	echo '<br><br><input type="submit" value="Update Fields"></form></div>';
+	echo '<br><br><div id="profileForm" style="display:none"><input type="submit" value="Update Fields"></div></form>';
 }
 
 //viewing someone's profile
