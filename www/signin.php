@@ -49,8 +49,8 @@ else {
                     $_SESSION['user_id']    = $row[0];
                     $_SESSION['user_fname']  = $row[1];
                     $_SESSION['user_level'] = $row[2];
-                    echo 'Welcome, ' . $_SESSION['user_fname'] . '. <a href="index.php">Proceed to the forum overview</a>.';
-                    echo '<META http-equiv="refresh" content="1;URL=index.php">';
+                    echo 'Welcome, ' . $_SESSION['user_fname'] . '. <a href="profile.php?id='.$_SESSION['user_id'].'&view=\'edit\'">Edit your profile.</a>.';
+                    echo '<META http-equiv="refresh" content="5;URL=index.php">';
                     $result->close();
                 }
             }
