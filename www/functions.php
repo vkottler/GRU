@@ -40,7 +40,7 @@ function signupForm() {
 	echo '<form method="post" action="">
     	First name: <input type="text" name="user_fname" /><br>
     	Last name: <input type="text" name="user_lname" /><br>
-        Username: <input type="text" id="user_name" name="user_name" onchange="checkUname(\'user_name\', \'uname_feedback\')" /><span id="uname_feedback"></span><br>
+        Username: <input type="text" id="user_name" name="user_name" onKeyUp="checkUname(\'user_name\', \'uname_feedback\')" /><span id="uname_feedback"></span><br>
         Password: <input type="password" name="user_pass"> (cannot be empty)<br>
         Password again: <input type="password" name="user_pass_check"><br>
         E-mail: <input type="email" name="user_email"><br><br>

@@ -49,7 +49,7 @@ function checkUname(id, toChange) {
 		}
 	?>
 	];
-	document.getElementById("testing").innerHTML = "function complete";
+	document.getElementById("testing").innerHTML = usernames;
 }
 
 </script>
