@@ -40,8 +40,28 @@ function showClassDescForm(divShow, divHide) {
 
 function checkUname(id, toChange) {
 	var toCheck = document.getElementById(id).value;
-	if (toCheck === "") return;
-	var result = "False";
+
+	// field is empty
+	if (toCheck === "") {
+		document.getElementById(toChange).innerHTML = "";
+		return;
+	}
+
+	// field not yet long enough to check
+	else if (toCheck.length < 5) {
+		document.getElementById(toChange).innerHTML = "Username too short!";
+		document.getElementById(toChange).style.color = "red";
+		return;
+	}
+
+	// field too long
+	else if (toCheck.length > 15) {
+		document.getElementById(toChange).innerHTML = "Username too long!";
+		document.getElementById(toChange).style.color = "red";
+		return;
+	}
+	
+	var result = false;
 	<?php $usernames = getAllUsernames(); ?>
 	var usernames = [
 	<?php 
@@ -53,9 +73,16 @@ function checkUname(id, toChange) {
 	];
 
 	for (i = 0; i < <?php echo $usernames[0]; ?>; i++) {
-		if (usernames[i] === toCheck) result = "True";
+		if (usernames[i] === toCheck) result = true;
 	}
-	document.getElementById("testing").innerHTML = "Checking if " + toCheck + "already exists. Result: " + result;
+	if (result) {
+		document.getElementById(toChange).innerHTML = "Username taken!";
+		document.getElementById(toChange).style.color = "red";
+	}
+	else {
+		document.getElementById(toChange).innerHTML = "Username available!";
+		document.getElementById(toChange).style.color = "green";
+	}
 }
 
 </script>
