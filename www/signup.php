@@ -15,8 +15,8 @@ else {
 	else {
 		
 		$errors = array (); /* declare the array for later use */
-		if (!isset($_POST['user_fname']) || !isset($_POST['user_lname'])) {
-			$errors[] = 'Both first and last name must be filled in.';
+		if (strlen($_POST['user_fname']) == 0 || strlen($_POST['user_fname']) == 0) {
+			$errors[] = 'Neither first nor last name can be left empty.';
 		}
 		if (isset ( $_POST ['user_name'] )) {
 			// the user name exists
