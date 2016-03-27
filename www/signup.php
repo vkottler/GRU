@@ -15,7 +15,9 @@ else {
 	else {
 		
 		$errors = array (); /* declare the array for later use */
-		
+		if (!isset($_POST['user_fname']) || !isset($_POST['user_lname'])) {
+			$errors[] = 'Both first and last name must be filled in.';
+		}
 		if (isset ( $_POST ['user_name'] )) {
 			// the user name exists
 			if (! ctype_alnum ( $_POST ['user_name'] ))
@@ -42,6 +44,7 @@ else {
 			foreach ( $errors as $key => $value) /* walk through the array so all the errors get displayed */
       		echo '<li style="color:red">' . $value . '</li>'; /* this generates a nice error list */
 			echo '</ul><br>';
+			signupForm();
 		} 
 		else {
 			$sql = buildSignupQuery($_POST['user_fname'], $_POST['user_lname'], $_POST['user_name'], $_POST['user_pass'], $_POST['user_email']);
