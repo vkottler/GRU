@@ -28,6 +28,9 @@ else {
 		if (isset ( $_POST ['user_pass'] )) {
 			if ($_POST ['user_pass'] != $_POST ['user_pass_check'])
 				$errors [] = 'The two passwords did not match.';
+			if (strlen($_POST['user_pass']) < 5) {
+				$errors[] = 'Password must be at least 5 characters!';
+			}
 		}
 		else
 			$errors [] = 'The password field cannot be empty.';
