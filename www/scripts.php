@@ -51,6 +51,14 @@ function showClassDescForm(divShow, divHide) {
 	<?php } ?>
 }
 
+function checkPW(id, toChange) {
+	var toCheck = document.getElementById(id).value;
+	var message = "";
+	if (toCheck.length > 0) message = "";
+	else message "(cannot be empty)";
+	document.getElementyById(toChange).innerHTML = message;
+}
+
 function checkUname(id, toChange) {
 	var toCheck = document.getElementById(id).value;
 

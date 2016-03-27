@@ -41,7 +41,7 @@ function signupForm() {
     	First name: <input type="text" name="user_fname" /><br>
     	Last name: <input type="text" name="user_lname" /><br>
         Username: <input type="text" id="user_name" name="user_name" onKeyUp="checkUname(\'user_name\', \'uname_feedback\')" /><span id="uname_feedback"></span><br>
-        Password: <input type="password" name="user_pass"> (cannot be empty)<br>
+        Password: <input type="password" name="user_pass" id="user_pass" onKeyUp="checkPW(\'user_pass\', \'pw_feedback\')"><span id="pw_feedback">(cannot be empty)</span><br>
         Password again: <input type="password" name="user_pass_check"><br>
         E-mail: <input type="email" name="user_email"><br><br>
         <input type="submit" value="Sign Up" />

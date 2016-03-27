@@ -2,6 +2,7 @@
 include 'connect.php';
 include 'header.php';
 include 'functions.php';
+// scripts.php gets included in footer
 
 $sql = 'SELECT * FROM `forumData`.`users` WHERE user_id='.$_GET['id'];
 $result = $conn->query($sql);
