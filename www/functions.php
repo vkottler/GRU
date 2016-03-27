@@ -37,15 +37,18 @@ function createClassForm() {
 }
 
 function signupForm() {
+	echo '<table style="width:50%">';
 	echo '<form method="post" action="">
-    	First name: <input type="text" name="user_fname" /><br>
-    	Last name: <input type="text" name="user_lname" /><br>
-        Username: <input type="text" id="user_name" name="user_name" onKeyUp="checkUname(\'user_name\', \'uname_feedback\')" /><span id="uname_feedback"></span><br>
-        Password: <input type="password" name="user_pass" id="user_pass" onKeyUp="checkPW(\'user_pass\', \'pw_feedback\')"><span id="pw_feedback">(cannot be empty)</span><br>
-        Password again: <input type="password" name="user_pass_check"><br>
-        E-mail: <input type="email" name="user_email"><br><br>
-        <input type="submit" value="Sign Up" />
+    	<tr><td>First name:</td><td><input type="text" name="user_fname"></td></tr>
+    	<tr><td>Last name:</td><td><input type="text" name="user_lname"></td></tr>
+        <tr><td>Username:</td><td><input type="text" id="user_name" name="user_name" onKeyUp="checkUname(\'user_name\', \'uname_feedback\')" /><span id="uname_feedback"></span></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="user_pass" id="user_pass" onKeyUp="checkPW(\'user_pass\', \'pw_feedback\')"><span id="pw_feedback">(cannot be empty)</span></td></tr>
+        <tr><td>Password again:</td><td><input type="password" name="user_pass_check"></td></tr>
+        <tr><td>E-mail:</td><td><input type="email" name="user_email"></td></tr>
+		<tr><td colspan=2></td></tr>
+        <tr><td><input type="submit" value="Sign Up"></td><td></td></tr>
      </form>';
+	echo '</table>';
 }
 
 function getAllUsernames() {
