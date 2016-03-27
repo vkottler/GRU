@@ -39,7 +39,8 @@ function showClassDescForm(divShow, divHide) {
 }
 
 function checkUname(id, toChange) {
-	document.getElementById("testing").innerHTML = "function activated";
+	var toCheck = document.getElementById(id).innerHTML;
+	var result = "False";
 	<?php $usernames = getAllUsernames(); ?>
 	var usernames = [
 	<?php 
@@ -49,7 +50,12 @@ function checkUname(id, toChange) {
 		}
 	?>
 	];
-	document.getElementById("testing").innerHTML = usernames;
+
+	for (i = 0; i < <?php echo $usernames[0]; ?>; i++) {
+		if (usernames[i] === toCheck) result = "True";
+	}
+	
+	document.getElementById("testing").innerHTML = "Checking if " + toCheck + "already exists. Result: " + result;
 }
 
 </script>
