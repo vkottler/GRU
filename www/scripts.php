@@ -56,7 +56,7 @@ function checkPW(id, toChange) {
 	var message = "";
 	if (toCheck.length > 0) message = "";
 	else message = "(cannot be empty)";
-	document.getElementyById(toChange).innerHTML = message;
+	document.getElementById(toChange).innerHTML = message;
 }
 
 function checkUname(id, toChange) {
