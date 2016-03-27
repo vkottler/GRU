@@ -3,6 +3,19 @@
 
 var shown = 0;
 
+// get the usernames from a php array to a javascript array
+// this is a pretty neat bit of code and it is worth understanding
+// how this is possible
+<?php $usernames = getAllUsernames(); ?>
+var usernames = [<?php 
+
+	for ($i = 1; $i < $usernames[0] + 1; $i++) {
+		if ($i == $usernames[0]) echo '"'.$usernames[$i].'"';
+		else echo '"'.$usernames[$i].'", ';
+	}
+	
+?>];
+
 function revealForm(divName) { document.getElementById(divName).style.display = "block"; }
 function hideForm(divName) { document.getElementById(divName).style.display = "none"; }
 
@@ -62,23 +75,19 @@ function checkUname(id, toChange) {
 	}
 	
 	var result = false;
-	<?php $usernames = getAllUsernames(); ?>
-	var usernames = [
-	<?php 
-		for ($i = 1; $i < $usernames[0] + 1; $i++) {
-			if ($i == $usernames[0]) echo '"'.$usernames[$i].'"';
-			else echo '"'.$usernames[$i].'", ';
-		}
-	?>
-	];
 
+	// compare current string to all usernames
 	for (i = 0; i < <?php echo $usernames[0]; ?>; i++) {
 		if (usernames[i] === toCheck) result = true;
 	}
+
+	// if found show message
 	if (result) {
 		document.getElementById(toChange).innerHTML = "Username taken!";
 		document.getElementById(toChange).style.color = "red";
 	}
+
+	// if available show message
 	else {
 		document.getElementById(toChange).innerHTML = "Username available!";
 		document.getElementById(toChange).style.color = "green";
