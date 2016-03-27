@@ -39,6 +39,7 @@ function showClassDescForm(divShow, divHide) {
 }
 
 function checkUname(id, toChange) {
+	document.getElementById("testing").innerHTML = "function activated";
 	<?php $usernames = getAllUsernames(); ?>
 	var usernames = [
 	<?php 
@@ -48,7 +49,7 @@ function checkUname(id, toChange) {
 		}
 	?>
 	];
-	document.getElementById("testing").innerHTML = usernames;
+	document.getElementById("testing").innerHTML = "function complete";
 }
 
 </script>
