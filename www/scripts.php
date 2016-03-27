@@ -57,7 +57,7 @@ function checkPW(id, toChange) {
 	if (toCheck.length > 0 && toCheck.length > 5) message = "";
 	else if (toCheck.length > 0 && toCheck.length < 5) {
 		message = "Passord too short!";
-		document.getElementById(tochange).style.color = "red";
+		document.getElementById(toChange).style.color = "red";
 	}
 	else { 
 		message = "(cannot be empty)";
