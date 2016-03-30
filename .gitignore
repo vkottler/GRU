@@ -4,4 +4,5 @@ logs/*
 .project
 connect.php
 *.phpproj
+*.sln
 
