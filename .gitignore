@@ -3,3 +3,5 @@ logs/*
 .buildpath
 .project
 connect.php
+*.phpproj
+
