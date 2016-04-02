@@ -7,4 +7,6 @@ connect.php
 *.phpproj
 *.sln
 update.php
+vs/*
+LICENSE
 
