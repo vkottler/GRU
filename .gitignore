@@ -1,5 +1,6 @@
 .settings/*
 logs/*
+logs/*.log
 .buildpath
 .project
 connect.php
