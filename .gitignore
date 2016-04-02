@@ -5,4 +5,5 @@ logs/*
 connect.php
 *.phpproj
 *.sln
+update.php
 
