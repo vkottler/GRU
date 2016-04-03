@@ -3445,3 +3445,218 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Sat Apr 02 11:06:29.555057 2016] [:error] [pid 2572] [client 204.15.26.22:20034] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/index.php
 error: cannot open .git/FETCH_HEAD: Permission denied
 
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:27:40.941920 2016] [:error] [pid 10955] [client 204.15.26.22:20154] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:27:40.941960 2016] [:error] [pid 10955] [client 204.15.26.22:20154] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:27:40.943711 2016] [:error] [pid 10955] [client 204.15.26.22:20154] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:28:24.755929 2016] [:error] [pid 10954] [client 204.15.26.22:20163] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:28:24.755971 2016] [:error] [pid 10954] [client 204.15.26.22:20163] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:28:24.757727 2016] [:error] [pid 10954] [client 204.15.26.22:20163] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:28:31.790907 2016] [:error] [pid 2572] [client 204.15.26.22:20164] script '/var/git/GRUsite/www/testing.php' not found or unable to stat, referer: http://vaughnsplayground.me/testing.php
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:32:33.912578 2016] [:error] [pid 11289] [client 204.15.26.22:20308] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:32:33.912619 2016] [:error] [pid 11289] [client 204.15.26.22:20308] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:32:33.914331 2016] [:error] [pid 11289] [client 204.15.26.22:20308] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:32:37.246327 2016] [:error] [pid 11289] [client 204.15.26.22:20308] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:32:37.246364 2016] [:error] [pid 11289] [client 204.15.26.22:20308] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:32:37.247812 2016] [:error] [pid 11289] [client 204.15.26.22:20308] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:33:45.620514 2016] [:error] [pid 10954] [client 204.15.26.22:20322] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:33:45.620554 2016] [:error] [pid 10954] [client 204.15.26.22:20322] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:33:45.622331 2016] [:error] [pid 10954] [client 204.15.26.22:20322] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:33:48.927574 2016] [:error] [pid 10954] [client 204.15.26.22:20322] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:33:48.927634 2016] [:error] [pid 10954] [client 204.15.26.22:20322] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:33:48.929123 2016] [:error] [pid 10954] [client 204.15.26.22:20322] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:34:06.304068 2016] [:error] [pid 12928] [client 204.15.26.22:20328] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:06.304108 2016] [:error] [pid 12928] [client 204.15.26.22:20328] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:06.305945 2016] [:error] [pid 12928] [client 204.15.26.22:20328] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:08.275923 2016] [:error] [pid 12928] [client 204.15.26.22:20328] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:34:08.275962 2016] [:error] [pid 12928] [client 204.15.26.22:20328] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:34:08.277438 2016] [:error] [pid 12928] [client 204.15.26.22:20328] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:34:17.345006 2016] [:error] [pid 10955] [client 204.15.26.22:20330] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:17.345044 2016] [:error] [pid 10955] [client 204.15.26.22:20330] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:17.346785 2016] [:error] [pid 10955] [client 204.15.26.22:20330] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:34:38.627976 2016] [:error] [pid 7162] [client 204.15.26.22:20334] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:38.628018 2016] [:error] [pid 7162] [client 204.15.26.22:20334] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:38.629860 2016] [:error] [pid 7162] [client 204.15.26.22:20334] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:34:40.808765 2016] [:error] [pid 11289] [client 204.15.26.22:20335] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:34:40.808802 2016] [:error] [pid 11289] [client 204.15.26.22:20335] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:34:40.810297 2016] [:error] [pid 11289] [client 204.15.26.22:20335] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:37:09.131273 2016] [:error] [pid 1321] [client 204.15.26.22:20369] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:37:09.131313 2016] [:error] [pid 1321] [client 204.15.26.22:20369] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:37:09.133146 2016] [:error] [pid 1321] [client 204.15.26.22:20369] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:37:10.808093 2016] [:error] [pid 1321] [client 204.15.26.22:20369] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:37:10.808131 2016] [:error] [pid 1321] [client 204.15.26.22:20369] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:37:10.809609 2016] [:error] [pid 1321] [client 204.15.26.22:20369] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:42:54.970192 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:42:54.970229 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:42:54.971971 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:42:56.869136 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:42:56.869173 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:42:56.870653 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:43:00.145509 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:43:00.145550 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:43:00.147324 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:43:02.875107 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:43:02.875144 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:43:02.876611 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:43:13.516652 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:43:13.516711 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:43:13.518534 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:43:15.205236 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:43:15.205275 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:43:15.206731 2016] [:error] [pid 1321] [client 204.15.26.22:20401] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:54:10.118439 2016] [mpm_prefork:notice] [pid 31297] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 02 11:54:11.283820 2016] [core:notice] [pid 17251] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 02 11:54:11.284715 2016] [suexec:notice] [pid 17251] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 02 11:54:11.323280 2016] [auth_digest:notice] [pid 17251] AH01757: generating secret for digest authentication ...
+[Sat Apr 02 11:54:11.323970 2016] [lbmethod_heartbeat:notice] [pid 17251] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 02 11:54:11.366716 2016] [mpm_prefork:notice] [pid 17251] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 02 11:54:11.366778 2016] [core:notice] [pid 17251] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:56:01.358785 2016] [mpm_prefork:notice] [pid 17251] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 02 11:56:02.550500 2016] [core:notice] [pid 17308] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 02 11:56:02.551579 2016] [suexec:notice] [pid 17308] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 02 11:56:02.602821 2016] [auth_digest:notice] [pid 17308] AH01757: generating secret for digest authentication ...
+[Sat Apr 02 11:56:02.603638 2016] [lbmethod_heartbeat:notice] [pid 17308] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 02 11:56:02.660470 2016] [mpm_prefork:notice] [pid 17308] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 02 11:56:02.660526 2016] [core:notice] [pid 17308] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 11:56:17.495598 2016] [:error] [pid 17311] [client 204.15.26.22:20559] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:56:17.495656 2016] [:error] [pid 17311] [client 204.15.26.22:20559] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:56:17.497981 2016] [:error] [pid 17311] [client 204.15.26.22:20559] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 11:56:19.245357 2016] [:error] [pid 17311] [client 204.15.26.22:20559] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:56:19.245394 2016] [:error] [pid 17311] [client 204.15.26.22:20559] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 11:56:19.246957 2016] [:error] [pid 17311] [client 204.15.26.22:20559] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 02 12:02:30.688708 2016] [mpm_prefork:notice] [pid 17308] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 02 12:02:31.891634 2016] [core:notice] [pid 17466] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 02 12:02:31.892759 2016] [suexec:notice] [pid 17466] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 02 12:02:31.943504 2016] [auth_digest:notice] [pid 17466] AH01757: generating secret for digest authentication ...
+[Sat Apr 02 12:02:31.944353 2016] [lbmethod_heartbeat:notice] [pid 17466] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 02 12:02:32.001268 2016] [mpm_prefork:notice] [pid 17466] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.19 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 02 12:02:32.001333 2016] [core:notice] [pid 17466] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 02 12:06:27.739413 2016] [:error] [pid 17470] [client 204.15.26.22:20702] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:06:27.739468 2016] [:error] [pid 17470] [client 204.15.26.22:20702] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:06:27.741772 2016] [:error] [pid 17470] [client 204.15.26.22:20702] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:06:30.455699 2016] [:error] [pid 17470] [client 204.15.26.22:20702] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:06:30.455739 2016] [:error] [pid 17470] [client 204.15.26.22:20702] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:06:30.457307 2016] [:error] [pid 17470] [client 204.15.26.22:20702] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 02 12:09:57.642854 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:09:57.642900 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:09:57.644968 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:10:00.462381 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:10:00.462422 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:10:00.464209 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:10:01.830608 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:10:01.830647 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:10:01.832205 2016] [:error] [pid 17495] [client 204.15.26.22:20724] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 02 12:12:29.107749 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:12:29.107789 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:12:29.109644 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:12:29.179685 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:12:29.179715 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:12:29.181463 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:12:30.649022 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:12:30.649059 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:12:30.650554 2016] [:error] [pid 17470] [client 204.15.26.22:20745] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:14:30.147370 2016] [:error] [pid 17589] [client 204.15.26.22:54819] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:14:30.147409 2016] [:error] [pid 17589] [client 204.15.26.22:54819] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:14:30.149260 2016] [:error] [pid 17589] [client 204.15.26.22:54819] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:14:31.488443 2016] [:error] [pid 17589] [client 204.15.26.22:54819] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:14:31.488492 2016] [:error] [pid 17589] [client 204.15.26.22:54819] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:14:31.490004 2016] [:error] [pid 17589] [client 204.15.26.22:54819] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 02 12:16:36.429984 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:16:36.430023 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:16:36.431784 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:16:36.531253 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:16:36.531284 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:16:36.532995 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:16:37.730339 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:16:37.730376 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:16:37.731841 2016] [:error] [pid 17495] [client 204.15.26.22:20764] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:17:24.974792 2016] [:error] [pid 17647] [client 204.15.26.22:54829] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:17:24.974876 2016] [:error] [pid 17647] [client 204.15.26.22:54829] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:17:24.977159 2016] [:error] [pid 17647] [client 204.15.26.22:54829] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:17:26.500309 2016] [:error] [pid 17647] [client 204.15.26.22:54829] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:17:26.500348 2016] [:error] [pid 17647] [client 204.15.26.22:54829] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:17:26.501905 2016] [:error] [pid 17647] [client 204.15.26.22:54829] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 02 12:18:35.343994 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:18:35.344041 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:18:35.346208 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/update.php
+[Sat Apr 02 12:18:35.592914 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:18:35.592947 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:18:35.594717 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Sat Apr 02 12:18:37.095516 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:18:37.095555 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:18:37.097113 2016] [:error] [pid 17648] [client 204.15.26.22:20785] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+[Sat Apr 02 12:19:24.666967 2016] [:error] [pid 17589] [client 204.15.26.22:20791] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/class.php?id=1
+[Sat Apr 02 12:19:24.667010 2016] [:error] [pid 17589] [client 204.15.26.22:20791] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/class.php?id=1
+[Sat Apr 02 12:19:24.667515 2016] [:error] [pid 17589] [client 204.15.26.22:20791] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/signin.php on line 61, referer: http://204.15.26.22:133/class.php?id=1
+[Sat Apr 02 12:19:24.668057 2016] [:error] [pid 17589] [client 204.15.26.22:20791] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/class.php?id=1
+[Sat Apr 02 12:19:31.117251 2016] [:error] [pid 17495] [client 204.15.26.22:20792] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/signin.php
+[Sat Apr 02 12:19:31.117292 2016] [:error] [pid 17495] [client 204.15.26.22:20792] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/signin.php
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 02 12:24:39.616368 2016] [:error] [pid 17646] [client 204.15.26.22:54869] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 02 12:24:39.616415 2016] [:error] [pid 17646] [client 204.15.26.22:54869] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 02 12:24:39.618292 2016] [:error] [pid 17646] [client 204.15.26.22:54869] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
