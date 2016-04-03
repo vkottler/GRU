@@ -109,6 +109,6 @@ function checkUname(id, toChange) {
 	}
 }
     function addTopic(){
-        document.getElementById(addTopic).innerHTML='<input type="text"><br><input type="text" value="Question">';
+        document.getElementById("addTopic").innerHTML='<input type="text" value="Title"><br><input type="text" value="Question">';
     }
 </script>
