@@ -3443,3 +3443,5 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Sat Apr 02 11:06:29.553512 2016] [:error] [pid 2572] [client 204.15.26.22:20034] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/index.php
 [Sat Apr 02 11:06:29.553556 2016] [:error] [pid 2572] [client 204.15.26.22:20034] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/index.php
 [Sat Apr 02 11:06:29.555057 2016] [:error] [pid 2572] [client 204.15.26.22:20034] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/index.php
+error: cannot open .git/FETCH_HEAD: Permission denied
+
