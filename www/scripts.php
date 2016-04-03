@@ -108,5 +108,7 @@ function checkUname(id, toChange) {
 		document.getElementById(toChange).style.color = "green";
 	}
 }
-
+    function addTopic(){
+        document.getElementById(addTopic).innerHTML='<input type="text"><br><input type="text" value="Question">';
+    }
 </script>
