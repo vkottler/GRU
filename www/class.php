@@ -31,7 +31,7 @@ if (isset($_GET['id'])) {
 		
 		echo '<div id="currDescription">'.$data[2].$fourSpaces.'<input type="button" value="Edit Description" onClick="javascript:showClassDescForm('.$jsArg1.', '.$jsArg2.')" style="display:inline-block;"></div>
                 <br><i>Added by: '.userFullNameFromID($data[4]).'</i><br><hr><br>';
-        echo'<div id="addTopic"><input type="button" value="New Topic" ></div>';
+        echo'<div id="addTopic"><input type="button" value="New Topic" onClick="javascipt:addTopic()></div>';
 		echo '<div id="classDescription" style="display:none">'.$classForm.'</div>';
 	}
 }
