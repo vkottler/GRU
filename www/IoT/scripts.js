@@ -11,7 +11,7 @@
     var functionName = "myFunction";
 
     function changeToken(selectID, formID) {
-        currToken = document.getElementyById(selectID).value;
+        currToken = document.getElementById(selectID).value;
         if (currToken === vaughnsToken) {
             document.getElementById("vaughnDevice").style.display = "block";
             document.getElementById("cooperDevice").style.display = "none";
