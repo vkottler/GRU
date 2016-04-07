@@ -7,18 +7,19 @@
     var vaughnsCore = "55ff6f066678505540361367";
     var currToken = vaughnsToken;
     var currDevice = vaughnsPhoton;
-    var currPerson = "vaughn";
     var functionName = "myFunction";
 
     function changeToken(selectID, formID) {
         currToken = document.getElementById(selectID).value;
         if (currToken === vaughnsToken) {
-            document.getElementById("vaughnDevice").style.display = "block";
+            document.getElementById("vaughnDevice").style.display = "inline";
             document.getElementById("cooperDevice").style.display = "none";
+            changeDevice("vaughnDevice", formID);
         }
         else if (currToken === coopersToken) {
             document.getElementById("vaughnDevice").style.display = "none";
-            document.getElementById("cooperDevice").style.display = "block";
+            document.getElementById("cooperDevice").style.display = "inline";
+            changeDevice("cooperDevice", formID);
         }
         buildGetString(currToken, functionName, currDevice, formID);
     }
