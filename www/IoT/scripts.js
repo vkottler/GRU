@@ -33,6 +33,11 @@
 
     }
 
+    function updateFunction(id, formID) {
+        functionName = document.getElementById(id).value;
+        buildGetString(currToken, functionName, currDevice, formID);
+    }
+
     function changeDevice(selectID, formID) {
         currDevice = document.getElementById(selectID).value;
         buildGetString(currToken, functionName, currDevice, formID);
