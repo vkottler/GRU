@@ -11,7 +11,7 @@
     var functionName = "myFunction";
 
     function changeToken(selectID, formID) {
-        currToken = document.getElementyById(selectID).value;
+        currToken = document.getElementById(selectID).value;
         if (currToken === vaughnsToken) {
             document.getElementById("vaughnDevice").style.display = "block";
             document.getElementById("cooperDevice").style.display = "none";
@@ -27,13 +27,13 @@
         var startOfString = "https://api.particle.io/v1/devices/";
         var middleOfString = "/" + functionName + "?access_token=";
         var getString = startOfString + currDevice + middleOfString + currToken;
-        document.getElementyById(formID).action = getString;
+        document.getElementById(formID).action = getString;
         document.getElementById("forTesting").innerHTML = getString;
 
     }
 
     function changeDevice(selectID, formID) {
-        currDevice = document.getElementyById(selectID).value;
+        currDevice = document.getElementById(selectID).value;
         buildGetString(currToken, functionName, currDevice, formID);
     }
 
