@@ -2,7 +2,7 @@
     <head>
 
     </head>
-    <script src="scripts.php"></script>
+    <script src="scripts.js"></script>
     <body>
         <select onchange="changeToken('changeToken', 'iotForm')" id="changeToken">
         <option value="4b8d6fc4ec57c326e5fbe7ede37f7af6eb32d1d5" selected>Vaughn</option>
