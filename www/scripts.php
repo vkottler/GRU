@@ -109,6 +109,6 @@ function checkUname(id, toChange) {
 	}
 }
     function addPost(){
-        document.getElementById("addPost").innerHTML='<form method="post" action="">Title: <input type="text"><br>Question: <br><textarea name="question"><br><?php addPosts(); ?><input type="submit" value="Submit"></form>';
+        document.getElementById("addPost").innerHTML='<form method="post" action="">Title: <input type="text"><br>Question: <br><textarea name="question"></textarea><br> <?php addPosts(); ?> <input type="submit" value="Submit"></form>';
     }
 </script>
