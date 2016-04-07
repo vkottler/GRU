@@ -27,13 +27,13 @@
         var startOfString = "https://api.particle.io/v1/devices/";
         var middleOfString = "/" + functionName + "?access_token=";
         var getString = startOfString + currDevice + middleOfString + currToken;
-        document.getElementyById(formID).action = getString;
+        document.getElementById(formID).action = getString;
         document.getElementById("forTesting").innerHTML = getString;
 
     }
 
     function changeDevice(selectID, formID) {
-        currDevice = document.getElementyById(selectID).value;
+        currDevice = document.getElementById(selectID).value;
         buildGetString(currToken, functionName, currDevice, formID);
     }
 
