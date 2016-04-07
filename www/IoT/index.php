@@ -2,40 +2,28 @@
     <head>
 
     </head>
-    <script type="text/javascript">
-    var vaughnsToken = "4b8d6fc4ec57c326e5fbe7ede37f7af6eb32d1d5";
-    var coopersToken = "bd2d2aab5945061a2d9af12248099c2fd9c9191b";
-    var cooperSparkCore = "55ff70066678505552540667";
-    var vaughnsPhoton = "1f002b001247343432313031";
-    var vaughnsCore = "55ff6f066678505540361367";
-    var currToken = "";
-    var currDevice = "";
-
-    function changeToken(selectID, formID) {
-        currToken = document.getElementyById(selectID).value;
-        // TODO: build string for action field
-        // document.getElementById(formID).action = "";
-    }
-
-    function changeDevice(selectID, formID) {
-        currDevice = document.getElementyById(selectID).value;
-        // TODO: build string for action field
-        // document.getElementById(formID).action = "";
-    }
-
-    </script>
+    <script src="scripts.php"></script>
     <body>
         <select onchange="changeToken('changeToken', 'iotForm')" id="changeToken">
-        <option value=""></option>
+        <option value="4b8d6fc4ec57c326e5fbe7ede37f7af6eb32d1d5" selected>Vaughn</option>
+        <option value="bd2d2aab5945061a2d9af12248099c2fd9c9191b">Cooper</option>
         </select>
 
-        <select onchange="changeDevice('changeDevice', 'iotForm')" id="changeDevice">
-        <option value=""></option>
+        <select onchange="changeDevice('vaughnDevice', 'iotForm')" id="vaughnDevice">
+        <option value="55ff6f066678505540361367">Spark Core</option>
+        <option value="1f002b001247343432313031" selected>Photon</option>
         </select>
 
-        <form action = "" method="POST">
-        <input type="Submit" value="Send Over Cloud" id="iotForm">
+        <select style="display:none" onchange="changeDevice('cooperDevice', 'iotForm')" id="cooperDevice">
+        <option value="55ff70066678505552540667" selected>Spark Core</option>
+        </select>
+
+        <form id="iotForm" action="https://api.particle.io/v1/devices/1f002b001247343432313031/myFunction?access_token=4b8d6fc4ec57c326e5fbe7ede37f7af6eb32d1d5" method="POST">
+        <input type="Submit" value="Send Over Cloud">
         </form>
+        <br /><br />
+        Current Form Get String:
+        <div id="forTesting">https://api.particle.io/v1/devices/1f002b001247343432313031/myFunction?access_token=4b8d6fc4ec57c326e5fbe7ede37f7af6eb32d1d5</div>
 
     </body>
 </html>
