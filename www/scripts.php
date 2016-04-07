@@ -108,7 +108,7 @@ function checkUname(id, toChange) {
 		document.getElementById(toChange).style.color = "green";
 	}
 }
-    function addTopic(){
-        document.getElementById("addTopic").innerHTML='Title: <input type="text" value="Title"><br>Question: <br><textarea name="question">';
+    function addPost(){
+        document.getElementById("addPost").innerHTML='<form method="post" action="">Title: <input type="text"><br>Question: <br><textarea name="question"><br><?php addPost()?><input type="submit" value="Submit"></form>';
     }
 </script>
