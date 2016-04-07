@@ -155,5 +155,17 @@ function userFullNameFromID($id) {
 		return $data[1].' '.$data[2];
 	}
 }
+function addPost(){
+    global $conn;
+    $result = $conn->query("SELECT * FROM `forumData`.`posts`;");
+    $num_rows = $result->num_rows;
+    for ($i = 0; $i < $num_rows; $i++) {
+        $data = $result->fetch_row();
+        echo '<option value='.$data[0];
+        if ($data[0] == $_GET['id']) echo ' selected="selected"';
+        echo '>';
+        echo $data[1].'</option>';
+    }
+}
 
 ?>
