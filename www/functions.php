@@ -155,7 +155,7 @@ function userFullNameFromID($id) {
 		return $data[1].' '.$data[2];
 	}
 }
-function addPost(){
+function addPosts(){
     global $conn;
     $result = $conn->query("SELECT * FROM `forumData`.`posts`;");
     $num_rows = $result->num_rows;
