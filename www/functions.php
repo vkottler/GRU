@@ -163,10 +163,10 @@ function userFullNameFromID($id) {
 		return $data[1].' '.$data[2];
 	}
 }
-function showPosts() {
+function showPosts($classID) {
     global $conn;
     global $fourSpaces;
-    $result = $conn->query("SELECT * FROM `forumData`.`posts`;");
+    $result = $conn->query("SELECT * FROM `forumData`.`posts` WHERE `post_class`=".$classID.";");
     $num_rows = $result->num_rows;
     if ($num_rows == 0) {
         echo 'No posts!';
