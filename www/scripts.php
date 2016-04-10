@@ -111,9 +111,9 @@ function checkUname(id, toChange) {
     function addPostForm(toDo){
         if (toDo === "show") {
             document.getElementById("addPost").innerHTML =
-            '<form method="post" action="class.php"><input type="button" onClick="addPostForm(\'hide\')">' +
-            '<br><br>Title: <input type="text"><br>Question: <br>' +
-            '<textarea name="question"></textarea><br><input type="submit" value="Submit"></form>';
+            '<form method="post" action="class.php"><input type="button" value="Hide Form" onClick="addPostForm(\'hide\')">' +
+            '<br><br>Title: <input type="text" name="postTitle"><br>Question: <br>' +
+            '<textarea name="questionContent"></textarea><br><input type="submit" value="Submit"></form>';
         }
         else if (toDo === "hide") {
             document.getElementById("addPost").innerHTML =

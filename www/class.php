@@ -6,11 +6,20 @@ include 'functions.php';
 $fourSpaces = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$sql = "UPDATE `forumData`.`classes` SET `class_description`='".$_POST['new_description']."'
+
+    // updating description    
+    if (isset($_POST['new_description'])) {
+	    $sql = "UPDATE `forumData`.`classes` SET `class_description`='".$_POST['new_description']."'
 			WHERE `class_id`=".$_POST['curr_id'];
-	$result = $conn->query($sql);
-	if (!$result) echo 'Uh oh. Something went wrong!';
-	else echo 'Class Description has been updated.<br><br>';
+	    $result = $conn->query($sql);
+	    if (!$result) echo 'Uh oh. Something went wrong!';
+	    else echo 'Class Description has been updated.<br><br>';
+    }
+
+    // adding a post
+    else if (isset($_POST['postTitle'])) {
+        var_dump($_POST);
+    }
 }
 
 if (isset($_GET['id'])) {
