@@ -18,8 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // adding a post
     else if (isset($_POST['postTitle'])) {
-        var_dump($_POST);
-        echo '<br><br>';
+        if (strcmp($_POST['postTitle'], "") == 0 || strcmp($_POST['questionContent'], "") == 0) {
+            echo 'You can\'t add an unnamed or empty question!';
+        }
+        else {
+            $sql = buildPostQuery($_POST['postTitle'], $_POST['questionContent'], $_SESSION['user_id'], $_SESSION['curr_class']);
+            echo $sql;
+        }
     }
 }
 
@@ -45,7 +50,8 @@ if (isset($_GET['id']) || isset($_SESSION['curr_class'])) {
 		echo '<div id="classDescription" style="display:none">'.$classForm.'</div>';
 
         echo showPosts();
-        echo'<div id="addPost"><input type="button" value="New Post" onClick="javascipt:addPostForm(\'show\')"></div>';
+
+        if ($_SESSION['signed_in'] == true) echo'<div id="addPost"><input type="button" value="New Post" onClick="javascipt:addPostForm(\'show\')"></div>';
 	}
 }
 else echo 'No Class specified.';
