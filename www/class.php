@@ -32,7 +32,9 @@ if (isset($_GET['id'])) {
 		echo '<div id="currDescription">'.$data[2].$fourSpaces.'<input type="button" value="Edit Description" onClick="javascript:showClassDescForm('.$jsArg1.', '.$jsArg2.')" style="display:inline-block;"></div>
                 <br><i>Added by: '.userFullNameFromID($data[4]).'</i><br><hr><br>';
 		echo '<div id="classDescription" style="display:none">'.$classForm.'</div>';
-        echo'<div id="addPost"><input type="button" value="New Post" onClick="javascipt:addPost()"></div>';
+
+        echo showPosts();
+        echo'<div id="addPost"><input type="button" value="New Post" onClick="javascipt:addPostForm(\'show\')"></div>';
 	}
 }
 else echo 'No Class specified.';

@@ -108,7 +108,16 @@ function checkUname(id, toChange) {
 		document.getElementById(toChange).style.color = "green";
 	}
 }
-    function addPost(){
-        document.getElementById("addPost").innerHTML='<form method="post" action="">Title: <input type="text"><br>Question: <br><textarea name="question"></textarea><br> <?php addPosts(); ?> <input type="submit" value="Submit"></form>';
+    function addPostForm(toDo){
+        if (toDo === "show") {
+            document.getElementById("addPost").innerHTML =
+            '<form method="post" action="class.php"><button onClick="addPostForm(\'hide\')">' +
+            'Title: <input type="text"><br>Question: <br>' +
+            '<textarea name="question"></textarea><br><input type="submit" value="Submit"></form>';
+        }
+        else if (toDo === "hide") {
+            document.getElementById("addPost").innerHTML =
+            '<input type="button" value="New Post" onClick="javascipt:addPostForm(\'show\')">';
+        }
     }
 </script>
