@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if (isset($_GET['id']) || isset($_SESSION['curr_class'])) {
-    $_SESSION['curr_class'] = $_GET['id'];
-	$classData = $conn->query($_SESSION['curr_class']);
+    if (isset($_GET['id'])) $_SESSION['curr_class'] = $_GET['id'];
+	$classData = $conn->query(getClassData($_SESSION['curr_class']));
 	if ($classData->num_rows != 1) echo 'Class not found.';
 	else {
 		$data = $classData->fetch_row();
