@@ -80,6 +80,7 @@ function buildClassQuery($name, $description, $subject, $user) {
 function buildPostQuery($title, $content, $user, $class) {
     $sql = 'INSERT INTO `forumData`.`classes` (`post_by`, `post_class`, `post_content`, `post_title`, `post_date`)
             VALUES ('.$user.', '.$class.', "'.$content.'", "'.$title.'", NOW())';
+    return $sql;
 }
 
 function buildSignupQuery($fname, $lname, $uname, $pass, $email) {
