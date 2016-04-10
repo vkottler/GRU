@@ -19,11 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // adding a post
     else if (isset($_POST['postTitle'])) {
         var_dump($_POST);
+        echo '<br><br>';
     }
 }
 
-if (isset($_GET['id'])) {
-	$classData = $conn->query(getClassData($_GET['id']));
+if (isset($_GET['id']) || isset($_SESSION['curr_class'])) {
+    $_SESSION['curr_class'] = $_GET['id'];
+	$classData = $conn->query($_SESSION['curr_class']);
 	if ($classData->num_rows != 1) echo 'Class not found.';
 	else {
 		$data = $classData->fetch_row();
