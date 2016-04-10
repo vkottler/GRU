@@ -176,7 +176,7 @@ function showPosts($classID) {
         $data = $result->fetch_row();
         $date = date_create($data[3]);
 		$date = date_format($date, "m/d/Y");
-        echo 'Post '.$data[0].': '.($i + 1).'<br>';
+        echo 'Post '.($i + 1).': '.$data[1].'<br>';
         echo $fourSpaces.'Content: '.$data[2].'<br>';
         echo $fourSpaces.'By: '.userFullNameFromID($data[5]).' at '.$date;
     }

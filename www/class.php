@@ -50,9 +50,9 @@ if (isset($_GET['id']) || isset($_SESSION['curr_class'])) {
                 <br><i>Added by: '.userFullNameFromID($data[4]).'</i><br><hr><br>';
 		echo '<div id="classDescription" style="display:none">'.$classForm.'</div>';
 
-        echo showPosts($_SESSION['curr_class']);
+        if ($_SESSION['signed_in'] == true) echo'<br><div id="addPost"><input type="button" value="New Post" onClick="javascipt:addPostForm(\'show\')"></div><br><br>';
 
-        if ($_SESSION['signed_in'] == true) echo'<div id="addPost"><input type="button" value="New Post" onClick="javascipt:addPostForm(\'show\')"></div>';
+        echo showPosts($_SESSION['curr_class']);
 	}
 }
 else echo 'No Class specified.';
