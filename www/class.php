@@ -23,7 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         else {
             $sql = buildPostQuery($_POST['postTitle'], $_POST['questionContent'], $_SESSION['user_id'], $_SESSION['curr_class']);
-            echo $sql;
+            $conn->query($sql);
+            echo 'Your post was added.<br><br>';
         }
     }
 }

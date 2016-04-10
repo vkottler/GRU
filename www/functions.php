@@ -1,5 +1,7 @@
 <?php
 
+$fourSpaces = "&nbsp;&nbsp;&nbsp;&nbsp;";
+
 function signInForm() {
 	echo '<form method="post" action="">
            Username: <input type="text" name="user_name" /><br>
@@ -163,6 +165,7 @@ function userFullNameFromID($id) {
 }
 function showPosts() {
     global $conn;
+    global $fourSpaces;
     $result = $conn->query("SELECT * FROM `forumData`.`posts`;");
     $num_rows = $result->num_rows;
     if ($num_rows == 0) {
@@ -171,7 +174,11 @@ function showPosts() {
     }
     for ($i = 0; $i < $num_rows; $i++) {
         $data = $result->fetch_row();
-        echo 'Post: '.$data[0].': '.$data[1];
+        $date = date_create($data[3]);
+		$date = date_format($date, "m/d/Y");
+        echo 'Post '.$data[0].': '.$data[1].'<br>';
+        echo $fourSpaces.'Content: '.$data[2].'<br>';
+        echo $fourSpaces.'By: '.userFullNameFromID($data[5]).' at '.$date;
     }
 }
 
