@@ -177,16 +177,16 @@ function showPosts($classID) {
         echo '<div id="comment'.$i.'">';
         $date = date_create($data[3]);
 		$date = date_format($date, "m/d/Y");
-        echo 'Post '.($i + 1).': '.$data[1].'<br>';
-        echo $fourSpaces.'Content: '.$data[2].'<br>';
+        echo '<input type="button" value="^"><input type="button" value="v">('.$data[6].') <b>'.$data[1].'</b>';
         if ($_SESSION['user_id'] == $data[5]) {
-            echo $fourSpaces.'By: You at '.$date;
+            echo ' <i>You at '.$date.'</i>';
             echo ' <input type="button" value="Edit" onClick="editComment(\'comment'.$i.'\')">';
         }
         else {
-            echo $fourSpaces.'By: '.userFullNameFromID($data[5]).' at '.$date;
+            echo ' <i>'.userFullNameFromID($data[5]).' at '.$date.'</i>';
         }
-        echo '';
+        echo $fourSpaces.'Content: '.$data[2].'<br>';
+        echo '</div>';
     }
 }
 
