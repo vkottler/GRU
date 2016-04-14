@@ -122,9 +122,14 @@ function addPostForm(toDo){
     }
 }
 
-    function editComment(divId) {
-        document.getElementById(divId).innerHTML = "woo!";
+function editComment(divId, toDo) {
+    if (toDo === "show") {
+        document.getElementById(divId).innerHTML = 'woo! <input type="button" value="Hide Form" onClick="editComment(\''+ divId +'\', \'hide\')">';
     }
+    else if (toDo === "hide") {
+        document.getElementById(divId).innerHTML = 'Under Construction! <input type="button" value="Hide Form" onClick="editComment(\''+ divId +'\', \'show\')">';
+    }
+}
 
 
 </script>

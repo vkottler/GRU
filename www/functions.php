@@ -180,12 +180,12 @@ function showPosts($classID) {
         echo '<input type="button" value="^"><input type="button" value="v">('.$data[6].') <b>'.$data[1].'</b>';
         if ($_SESSION['user_id'] == $data[5]) {
             echo ' <i>You at '.$date.'</i>';
-            echo ' <input type="button" value="Edit" onClick="editComment(\'comment'.$i.'\')">';
+            echo ' <input type="button" value="Edit" onClick="editComment(\'comment'.$i.'\', \'show\')">';
         }
         else {
             echo ' <i>'.userFullNameFromID($data[5]).' at '.$date.'</i>';
         }
-        echo $fourSpaces.'Content: '.$data[2].'<br>';
+        echo '<br>'.$fourSpaces.'Content: '.$data[2].'<br>';
         echo '</div>';
     }
 }
