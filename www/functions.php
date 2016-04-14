@@ -174,11 +174,19 @@ function showPosts($classID) {
     }
     for ($i = 0; $i < $num_rows; $i++) {
         $data = $result->fetch_row();
+        echo '<div id="comment'.$i.'">';
         $date = date_create($data[3]);
 		$date = date_format($date, "m/d/Y");
         echo 'Post '.($i + 1).': '.$data[1].'<br>';
         echo $fourSpaces.'Content: '.$data[2].'<br>';
-        echo $fourSpaces.'By: '.userFullNameFromID($data[5]).' at '.$date;
+        if ($_SESSION['user_id'] == $data[5]) {
+            echo $fourSpaces.'By: You at '.$date;
+            echo ' <input type="button" value="Edit" onClick="editComment(\'comment'.$i.'\')">';
+        }
+        else {
+            echo $fourSpaces.'By: '.userFullNameFromID($data[5]).' at '.$date;
+        }
+        echo '';
     }
 }
 
