@@ -199,7 +199,7 @@ function linkToUsersPosts() {
         $data = $result->fetch_row();
         $date = date_create($data[3]);
 		$date = date_format($date, "m/d/Y");
-        echo '<a href="class.php?'.$data[4].'">'.$data[1].' on '.$date.'</a><br>';
+        echo '<a href="class.php?id='.$data[4].'">'.$data[1].' on '.$date.'</a><br>';
     }
 }
 
