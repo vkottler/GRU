@@ -31,7 +31,7 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	
 	echo '<br><br><div id="profileForm" style="display:none"><input type="submit" value="Update Fields"></div></form>';
 
-    echo '<br><br>';
+    echo 'Your posts:<br><br>';
     echo linkToUsersPosts();
 }
 
