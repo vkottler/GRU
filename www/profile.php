@@ -30,6 +30,9 @@ else if ($_SESSION['signed_in'] == true && strcmp($_GET['view'],"edit") == 0 && 
 	echo "Level: ".$data[8];
 	
 	echo '<br><br><div id="profileForm" style="display:none"><input type="submit" value="Update Fields"></div></form>';
+
+    echo '<br><br>';
+    echo linkToUsersPosts();
 }
 
 //viewing someone's profile

@@ -190,4 +190,16 @@ function showPosts($classID) {
     }
 }
 
+function linkToUsersPosts() {
+    global $conn;
+    $result = $conn->query("SELECT * FROM `forumData`.`posts` WHERE `post_class`=".$classID." AND `post_by`=".$_SESSION['user_id'].";");
+    $num_rows = $result->num_rows;
+    for ($i = 0; $i < $num_rows; $i++) {
+        $data = $result->fetch_row();
+        $date = date_create($data[3]);
+		$date = date_format($date, "m/d/Y");
+        echo '<a href="class.php?'.$data[4].'">'.$data[1].' on '.$date.'</a><br>';
+    }
+}
+
 ?>
