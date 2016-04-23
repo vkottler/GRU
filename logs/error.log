@@ -4880,3 +4880,353 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Wed Apr 20 20:23:30.126560 2016] [:error] [pid 23952] [client 66.249.73.191:38877] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
 [Wed Apr 20 20:23:30.126593 2016] [:error] [pid 23952] [client 66.249.73.191:38877] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
 [Wed Apr 20 20:23:30.128576 2016] [:error] [pid 23952] [client 66.249.73.191:38877] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 21:54:07.538333 2016] [:error] [pid 23949] [client 205.213.104.222:59782] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'vkottler'@'localhost' (using password: YES) in /var/git/GRUsite/www/DLM/wp-includes/wp-db.php on line 1489, referer: http://204.15.26.22:133/DLM/wp-admin/setup-config.php?step=1
+[Fri Apr 22 21:54:07.538589 2016] [:error] [pid 23949] [client 205.213.104.222:59782] PHP Warning:  mysql_connect(): Access denied for user 'vkottler'@'localhost' (using password: YES) in /var/git/GRUsite/www/DLM/wp-includes/wp-db.php on line 1515, referer: http://204.15.26.22:133/DLM/wp-admin/setup-config.php?step=1
+[Fri Apr 22 22:02:35.375028 2016] [mpm_prefork:notice] [pid 26837] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 22:02:36.581974 2016] [core:notice] [pid 23563] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 22:02:36.583878 2016] [suexec:notice] [pid 23563] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 22:02:36.643705 2016] [auth_digest:notice] [pid 23563] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 22:02:36.644713 2016] [lbmethod_heartbeat:notice] [pid 23563] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 22:02:36.697650 2016] [mpm_prefork:notice] [pid 23563] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 22:02:36.697719 2016] [core:notice] [pid 23563] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+sh: /usr/sbin/sendmail: No such file or directory
+[Fri Apr 22 22:15:06.086905 2016] [mpm_prefork:notice] [pid 23563] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 22:15:07.267621 2016] [core:notice] [pid 23682] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 22:15:07.268713 2016] [suexec:notice] [pid 23682] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 22:15:07.316168 2016] [auth_digest:notice] [pid 23682] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 22:15:07.316810 2016] [lbmethod_heartbeat:notice] [pid 23682] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 22:15:07.362388 2016] [mpm_prefork:notice] [pid 23682] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 22:15:07.362445 2016] [core:notice] [pid 23682] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 22:17:24.430120 2016] [mpm_prefork:notice] [pid 23682] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 22:17:33.365164 2016] [core:notice] [pid 23730] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 22:17:33.366242 2016] [suexec:notice] [pid 23730] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 22:17:33.414913 2016] [auth_digest:notice] [pid 23730] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 22:17:33.415719 2016] [lbmethod_heartbeat:notice] [pid 23730] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 22:17:33.469189 2016] [mpm_prefork:notice] [pid 23730] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 22:17:33.469263 2016] [core:notice] [pid 23730] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 22:17:54.713133 2016] [:error] [pid 23732] [client 205.213.104.222:64180] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:17:54.713185 2016] [:error] [pid 23732] [client 205.213.104.222:64180] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:17:54.718624 2016] [:error] [pid 23732] [client 205.213.104.222:64180] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:17:58.601287 2016] [:error] [pid 23735] [client 205.213.104.222:56215] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:17:58.601350 2016] [:error] [pid 23735] [client 205.213.104.222:56215] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:17:58.603886 2016] [:error] [pid 23735] [client 205.213.104.222:56215] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:18:10.049530 2016] [:error] [pid 23734] [client 205.213.104.222:57740] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Fri Apr 22 22:18:10.049591 2016] [:error] [pid 23734] [client 205.213.104.222:57740] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Fri Apr 22 22:18:10.052157 2016] [:error] [pid 23734] [client 205.213.104.222:57740] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Fri Apr 22 22:25:39.846190 2016] [:error] [pid 23739] [client 205.213.104.222:50053] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:25:39.846227 2016] [:error] [pid 23739] [client 205.213.104.222:50053] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:25:39.847517 2016] [:error] [pid 23739] [client 205.213.104.222:50053] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:26:39.909033 2016] [:error] [pid 23735] [client 205.213.104.222:58302] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:26:39.909065 2016] [:error] [pid 23735] [client 205.213.104.222:58302] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:26:39.911088 2016] [:error] [pid 23735] [client 205.213.104.222:58302] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:33:06.095695 2016] [:error] [pid 23736] [client 193.111.60.104:60277] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:33:06.095729 2016] [:error] [pid 23736] [client 193.111.60.104:60277] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:33:06.097679 2016] [:error] [pid 23736] [client 193.111.60.104:60277] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:35:42.335341 2016] [:error] [pid 23748] [client 193.111.60.5:63192] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:35:42.335392 2016] [:error] [pid 23748] [client 193.111.60.5:63192] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:35:42.337378 2016] [:error] [pid 23748] [client 193.111.60.5:63192] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:37:52.234572 2016] [:error] [pid 23745] [client 205.213.104.222:57119] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:37:52.234621 2016] [:error] [pid 23745] [client 205.213.104.222:57119] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:37:52.236619 2016] [:error] [pid 23745] [client 205.213.104.222:57119] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:38:20.651242 2016] [:error] [pid 23746] [client 205.213.104.222:57041] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Fri Apr 22 22:38:20.651289 2016] [:error] [pid 23746] [client 205.213.104.222:57041] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Fri Apr 22 22:38:20.653262 2016] [:error] [pid 23746] [client 205.213.104.222:57041] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Fri Apr 22 22:47:28.157334 2016] [mpm_prefork:notice] [pid 23730] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 22:48:58.369049 2016] [core:notice] [pid 23869] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 22:48:58.370226 2016] [suexec:notice] [pid 23869] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 22:48:58.414184 2016] [auth_digest:notice] [pid 23869] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 22:48:58.415152 2016] [lbmethod_heartbeat:notice] [pid 23869] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 22:48:58.470861 2016] [mpm_prefork:notice] [pid 23869] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 22:48:58.470917 2016] [core:notice] [pid 23869] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 22:51:20.216061 2016] [:error] [pid 23872] [client 193.111.60.5:63640] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:51:20.216119 2016] [:error] [pid 23872] [client 193.111.60.5:63640] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:51:20.218732 2016] [:error] [pid 23872] [client 193.111.60.5:63640] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:55:09.651782 2016] [mpm_prefork:notice] [pid 23869] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 22:55:10.819065 2016] [core:notice] [pid 23907] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 22:55:10.820142 2016] [suexec:notice] [pid 23907] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Apr 22 22:55:10.866413 2016] [auth_digest:notice] [pid 23907] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 22:55:10.867254 2016] [lbmethod_heartbeat:notice] [pid 23907] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 22:55:10.927542 2016] [mpm_prefork:notice] [pid 23907] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 22:55:10.927620 2016] [core:notice] [pid 23907] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 22:55:17.317151 2016] [:error] [pid 23910] [client 205.213.104.222:53574] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:55:17.317209 2016] [:error] [pid 23910] [client 205.213.104.222:53574] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:55:17.319749 2016] [:error] [pid 23910] [client 205.213.104.222:53574] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 22:57:47.804510 2016] [mpm_prefork:notice] [pid 23907] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 23:06:00.218095 2016] [core:notice] [pid 24126] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 23:06:00.219249 2016] [suexec:notice] [pid 24126] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 23:06:00.268785 2016] [auth_digest:notice] [pid 24126] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 23:06:00.269699 2016] [lbmethod_heartbeat:notice] [pid 24126] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 23:06:00.323072 2016] [mpm_prefork:notice] [pid 24126] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 23:06:00.323125 2016] [core:notice] [pid 24126] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 23:06:47.724254 2016] [:error] [pid 24128] [client 205.213.104.222:54922] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Fri Apr 22 23:06:47.724316 2016] [:error] [pid 24128] [client 205.213.104.222:54922] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Fri Apr 22 23:06:47.726902 2016] [:error] [pid 24128] [client 205.213.104.222:54922] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Fri Apr 22 23:08:28.330760 2016] [mpm_prefork:notice] [pid 24126] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 23:08:29.490554 2016] [core:notice] [pid 24157] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 23:08:29.491947 2016] [suexec:notice] [pid 24157] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 23:08:29.554733 2016] [auth_digest:notice] [pid 24157] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 23:08:29.555778 2016] [lbmethod_heartbeat:notice] [pid 24157] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 23:08:29.608297 2016] [mpm_prefork:notice] [pid 24157] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 23:08:29.608350 2016] [core:notice] [pid 24157] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 23:08:36.090143 2016] [:error] [pid 24159] [client 205.213.104.222:54840] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:08:36.090205 2016] [:error] [pid 24159] [client 205.213.104.222:54840] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:08:36.092857 2016] [:error] [pid 24159] [client 205.213.104.222:54840] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:09:23.970221 2016] [:error] [pid 24162] [client 205.213.104.222:64717] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Fri Apr 22 23:09:23.970286 2016] [:error] [pid 24162] [client 205.213.104.222:64717] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Fri Apr 22 23:09:23.972839 2016] [:error] [pid 24162] [client 205.213.104.222:64717] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Fri Apr 22 23:09:35.512559 2016] [:error] [pid 24169] [client 193.111.60.5:64365] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:09:35.512619 2016] [:error] [pid 24169] [client 193.111.60.5:64365] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:09:35.515195 2016] [:error] [pid 24169] [client 193.111.60.5:64365] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:09:45.295724 2016] [:error] [pid 24173] [client 193.111.60.5:64378] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:09:45.295785 2016] [:error] [pid 24173] [client 193.111.60.5:64378] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:09:45.298339 2016] [:error] [pid 24173] [client 193.111.60.5:64378] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:11:04.447191 2016] [mpm_prefork:notice] [pid 24157] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 23:11:05.634177 2016] [core:notice] [pid 24207] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 23:11:05.635289 2016] [suexec:notice] [pid 24207] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 23:11:05.684661 2016] [auth_digest:notice] [pid 24207] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 23:11:05.685493 2016] [lbmethod_heartbeat:notice] [pid 24207] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 23:11:05.739498 2016] [mpm_prefork:notice] [pid 24207] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 23:11:05.739551 2016] [core:notice] [pid 24207] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 23:16:23.291589 2016] [:error] [pid 24209] [client 205.213.104.222:51264] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:16:23.291657 2016] [:error] [pid 24209] [client 205.213.104.222:51264] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Fri Apr 22 23:16:23.294219 2016] [:error] [pid 24209] [client 205.213.104.222:51264] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+sh: /usr/sbin/sendmail: No such file or directory
+sh: /usr/sbin/sendmail: No such file or directory
+sh: /usr/sbin/sendmail: No such file or directory
+sh: /usr/sbin/sendmail: No such file or directory
+sh: /usr/sbin/sendmail: No such file or directory
+sh: /usr/sbin/sendmail: No such file or directory
+[Fri Apr 22 23:33:22.671698 2016] [mpm_prefork:notice] [pid 24207] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 23:33:23.854310 2016] [core:notice] [pid 24394] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 23:33:23.855400 2016] [suexec:notice] [pid 24394] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 23:33:23.904480 2016] [auth_digest:notice] [pid 24394] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 23:33:23.905365 2016] [lbmethod_heartbeat:notice] [pid 24394] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 23:33:23.965101 2016] [mpm_prefork:notice] [pid 24394] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 23:33:23.965156 2016] [core:notice] [pid 24394] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Apr 22 23:37:58.605587 2016] [mpm_prefork:notice] [pid 24394] AH00170: caught SIGWINCH, shutting down gracefully
+[Fri Apr 22 23:37:59.800083 2016] [core:notice] [pid 24438] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Fri Apr 22 23:37:59.801151 2016] [suexec:notice] [pid 24438] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 22 23:37:59.850055 2016] [auth_digest:notice] [pid 24438] AH01757: generating secret for digest authentication ...
+[Fri Apr 22 23:37:59.850887 2016] [lbmethod_heartbeat:notice] [pid 24438] AH02282: No slotmem from mod_heartmonitor
+[Fri Apr 22 23:37:59.905405 2016] [mpm_prefork:notice] [pid 24438] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Fri Apr 22 23:37:59.905462 2016] [core:notice] [pid 24438] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Apr 23 00:10:02.436158 2016] [mpm_prefork:notice] [pid 24438] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 00:10:03.619032 2016] [core:notice] [pid 24659] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 00:10:03.620130 2016] [suexec:notice] [pid 24659] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 00:10:03.669922 2016] [auth_digest:notice] [pid 24659] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 00:10:03.670799 2016] [lbmethod_heartbeat:notice] [pid 24659] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 00:10:03.736100 2016] [mpm_prefork:notice] [pid 24659] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 00:10:03.736156 2016] [core:notice] [pid 24659] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Apr 23 00:53:45.545384 2016] [:error] [pid 25013] [client 205.213.104.222:61376] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 23 00:53:45.545432 2016] [:error] [pid 25013] [client 205.213.104.222:61376] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 23 00:53:45.548037 2016] [:error] [pid 25013] [client 205.213.104.222:61376] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Sat Apr 23 00:54:53.056011 2016] [:error] [pid 25060] [client 205.213.104.222:55134] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 23 00:54:53.056061 2016] [:error] [pid 25060] [client 205.213.104.222:55134] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 23 00:54:53.058636 2016] [:error] [pid 25060] [client 205.213.104.222:55134] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Sat Apr 23 00:55:07.728586 2016] [:error] [pid 25068] [client 205.213.104.222:59463] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 23 00:55:07.728622 2016] [:error] [pid 25068] [client 205.213.104.222:59463] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 23 00:55:07.730300 2016] [:error] [pid 25068] [client 205.213.104.222:59463] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+fatal: Unable to create '/var/git/GRUsite/www/DLM/.git/index.lock': Permission denied
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 23 01:33:05.870537 2016] [:error] [pid 25432] [client 205.213.104.222:64073] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 23 01:33:05.870582 2016] [:error] [pid 25432] [client 205.213.104.222:64073] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 23 01:33:05.872587 2016] [:error] [pid 25432] [client 205.213.104.222:64073] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 23 02:57:37.515262 2016] [:error] [pid 26798] [client 205.213.104.222:58269] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 23 02:57:37.515311 2016] [:error] [pid 26798] [client 205.213.104.222:58269] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 23 02:57:37.517309 2016] [:error] [pid 26798] [client 205.213.104.222:58269] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Sat Apr 23 02:58:57.543081 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 23 02:58:57.543126 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 23 02:58:57.545111 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+[Sat Apr 23 02:59:01.448245 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/
+[Sat Apr 23 02:59:01.448281 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/
+[Sat Apr 23 02:59:01.450049 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/
+[Sat Apr 23 02:59:03.203758 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/subject.php?id=1
+[Sat Apr 23 02:59:03.203798 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/subject.php?id=1
+[Sat Apr 23 02:59:03.205135 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/class.php on line 53, referer: http://204.15.26.22:133/subject.php?id=1
+[Sat Apr 23 02:59:03.206249 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Warning:  date_create(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/git/GRUsite/www/functions.php on line 178, referer: http://204.15.26.22:133/subject.php?id=1
+[Sat Apr 23 02:59:03.206383 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: user_id in /var/git/GRUsite/www/functions.php on line 181, referer: http://204.15.26.22:133/subject.php?id=1
+[Sat Apr 23 02:59:03.207067 2016] [:error] [pid 26798] [client 205.213.104.222:59519] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/subject.php?id=1
+[Sat Apr 23 02:59:09.963404 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/class.php?id=3
+[Sat Apr 23 02:59:09.963460 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/class.php?id=3
+[Sat Apr 23 02:59:09.966025 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/class.php?id=3
+[Sat Apr 23 02:59:14.720705 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:14.720736 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:14.722580 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:16.201893 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/subject.php?id=2
+[Sat Apr 23 02:59:16.201923 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/subject.php?id=2
+[Sat Apr 23 02:59:16.203913 2016] [:error] [pid 26827] [client 205.213.104.222:54832] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/subject.php?id=2
+[Sat Apr 23 02:59:22.273586 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:22.273621 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:22.274943 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/class.php on line 53, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:22.275257 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Warning:  date_create(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /var/git/GRUsite/www/functions.php on line 178, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:22.275348 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: user_id in /var/git/GRUsite/www/functions.php on line 181, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:22.275974 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/index.php
+[Sat Apr 23 02:59:24.736587 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://204.15.26.22:133/class.php?id=1
+[Sat Apr 23 02:59:24.736617 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://204.15.26.22:133/class.php?id=1
+[Sat Apr 23 02:59:24.738597 2016] [:error] [pid 26715] [client 205.213.104.222:54345] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://204.15.26.22:133/class.php?id=1
+[Sat Apr 23 03:11:14.349508 2016] [mpm_prefork:notice] [pid 24659] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 03:11:15.639009 2016] [core:notice] [pid 26936] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 03:11:15.640137 2016] [suexec:notice] [pid 26936] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 03:11:15.688995 2016] [auth_digest:notice] [pid 26936] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 03:11:15.689895 2016] [lbmethod_heartbeat:notice] [pid 26936] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 03:11:15.752442 2016] [mpm_prefork:notice] [pid 26936] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 03:11:15.752513 2016] [core:notice] [pid 26936] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Apr 23 03:11:24.035037 2016] [:error] [pid 26939] [client 205.213.104.222:63694] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19, referer: http://vaughnsplayground.me/
+[Sat Apr 23 03:11:24.035087 2016] [:error] [pid 26939] [client 205.213.104.222:63694] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22, referer: http://vaughnsplayground.me/
+[Sat Apr 23 03:11:24.037631 2016] [:error] [pid 26939] [client 205.213.104.222:63694] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46, referer: http://vaughnsplayground.me/
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+sh: line 0: cd: /var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: /var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: /var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: /var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: /var/git/GRUsite/DLM2/: No such file or directory
+sh: line 0: cd: /var/git/GRUsite/DLM2/: No such file or directory
+[Sat Apr 23 03:29:12.398890 2016] [mpm_prefork:notice] [pid 26936] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 03:29:13.592403 2016] [core:notice] [pid 30361] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 03:29:13.593491 2016] [suexec:notice] [pid 30361] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 03:29:13.642282 2016] [auth_digest:notice] [pid 30361] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 03:29:13.643181 2016] [lbmethod_heartbeat:notice] [pid 30361] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 03:29:13.701421 2016] [mpm_prefork:notice] [pid 30361] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 03:29:13.701488 2016] [core:notice] [pid 30361] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+sh: line 0: cd: /var/git/GRUsite/DLM2: No such file or directory
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 23 03:31:19.414392 2016] [mpm_prefork:notice] [pid 30361] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 03:31:20.603583 2016] [core:notice] [pid 30451] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 03:31:20.604661 2016] [suexec:notice] [pid 30451] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 03:31:20.653258 2016] [auth_digest:notice] [pid 30451] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 03:31:20.654118 2016] [lbmethod_heartbeat:notice] [pid 30451] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 03:31:20.708971 2016] [mpm_prefork:notice] [pid 30451] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 03:31:20.709039 2016] [core:notice] [pid 30451] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 23 03:40:44.166153 2016] [mpm_prefork:notice] [pid 30451] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 03:40:45.355346 2016] [core:notice] [pid 30703] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 03:40:45.356444 2016] [suexec:notice] [pid 30703] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 03:40:45.405476 2016] [auth_digest:notice] [pid 30703] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 03:40:45.406297 2016] [lbmethod_heartbeat:notice] [pid 30703] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 03:40:45.462956 2016] [mpm_prefork:notice] [pid 30703] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 03:40:45.463008 2016] [core:notice] [pid 30703] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+[Sat Apr 23 03:48:46.972837 2016] [mpm_prefork:notice] [pid 30703] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 03:48:48.175018 2016] [core:notice] [pid 30903] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 03:48:48.176087 2016] [suexec:notice] [pid 30903] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 03:48:48.218253 2016] [auth_digest:notice] [pid 30903] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 03:48:48.219112 2016] [lbmethod_heartbeat:notice] [pid 30903] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 03:48:48.276594 2016] [mpm_prefork:notice] [pid 30903] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 03:48:48.276650 2016] [core:notice] [pid 30903] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+sudo: sorry, you must have a tty to run sudo
+[Sat Apr 23 03:52:22.306434 2016] [mpm_prefork:notice] [pid 30903] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 03:52:23.506349 2016] [core:notice] [pid 30976] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 03:52:23.507442 2016] [suexec:notice] [pid 30976] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 03:52:23.556724 2016] [auth_digest:notice] [pid 30976] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 03:52:23.557586 2016] [lbmethod_heartbeat:notice] [pid 30976] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 03:52:23.609386 2016] [mpm_prefork:notice] [pid 30976] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 03:52:23.609444 2016] [core:notice] [pid 30976] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+[Sat Apr 23 03:58:31.361180 2016] [mpm_prefork:notice] [pid 30976] AH00170: caught SIGWINCH, shutting down gracefully
+[Sat Apr 23 03:58:32.535669 2016] [core:notice] [pid 31241] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Sat Apr 23 03:58:32.536740 2016] [suexec:notice] [pid 31241] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using fe80::221:9bff:fe02:1391. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 23 03:58:32.586058 2016] [auth_digest:notice] [pid 31241] AH01757: generating secret for digest authentication ...
+[Sat Apr 23 03:58:32.586867 2016] [lbmethod_heartbeat:notice] [pid 31241] AH02282: No slotmem from mod_heartmonitor
+[Sat Apr 23 03:58:32.639613 2016] [mpm_prefork:notice] [pid 31241] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.6.20 mod_wsgi/3.4 Python/2.7.5 configured -- resuming normal operations
+[Sat Apr 23 03:58:32.639667 2016] [core:notice] [pid 31241] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 23 04:05:03.295217 2016] [:error] [pid 31246] [client 205.213.104.222:62005] PHP Notice:  Undefined index: signed_in in /var/git/GRUsite/www/header.php on line 19
+[Sat Apr 23 04:05:03.295270 2016] [:error] [pid 31246] [client 205.213.104.222:62005] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/header.php on line 22
+[Sat Apr 23 04:05:03.297634 2016] [:error] [pid 31246] [client 205.213.104.222:62005] PHP Notice:  Undefined index: user_level in /var/git/GRUsite/www/scripts.php on line 46
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+sudo: sorry, you must have a tty to run sudo
+sudo: sorry, you must have a tty to run sudo
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+error: cannot open .git/FETCH_HEAD: Permission denied
+
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 23 04:07:52.003413 2016] [:error] [pid 31247] [client 205.213.104.222:50108] script '/var/git/GRUsite/www/DLM2/index.php' not found or unable to stat
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 23 04:08:38.740809 2016] [:error] [pid 31529] [client 205.213.104.222:64414] script '/var/git/GRUsite/www/DLM2/index.php' not found or unable to stat, referer: http://204.15.26.22:133/DLM2/update.php
+From https://github.com/vkottler/GRU
+ * branch            master     -> FETCH_HEAD
+[Sat Apr 23 04:09:23.394128 2016] [:error] [pid 31244] [client 205.213.104.222:60640] script '/var/git/GRUsite/www/DLM2/index.php' not found or unable to stat
