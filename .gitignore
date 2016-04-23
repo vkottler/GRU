@@ -8,5 +8,6 @@ connect.php
 *.sln
 update.php
 .vs/*
+www/DLM/*
 LICENSE
 
